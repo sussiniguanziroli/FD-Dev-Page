@@ -1,0 +1,7 @@
+donde nos quedamos.
+
+necesito hacer que el navbar siga a los contactos en terminos de tamaño y sea flexible, cosa que no es.
+(podria usar media queries)
+me cuesta mucho hacer esto en la pc chica asi que veremos luego en la grande.
+
+necesito luego crear las queries de smartphone junto con el menu hamburguesa
