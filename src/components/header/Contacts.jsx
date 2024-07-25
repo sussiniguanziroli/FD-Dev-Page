@@ -14,7 +14,7 @@ const Contacts = () => {
         <a href="#"><img src="../src/assets/logo-instagram.svg" alt="instagram" /></a>
       </div>
       <div className='contacts-svgs'>
-        <a href="#"><img src="../src/assets/logo-mail.svg" alt="email" /></a>
+        <a href="#"><img src="../src/assets/logo-mail.svg" alt="email" /></a> 
       </div>
       
     </section>

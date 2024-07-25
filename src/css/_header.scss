@@ -1,35 +1,26 @@
 .header {
-    border: 1px solid red;
     display: flex;
-    justify-content: space-between;
+    gap: 32vw;
     background-image: url("../assets/background-nav.png");
-    background-size: cover; 
-    height: 40vh;
+    background-size: 90%; 
+    background-repeat: no-repeat;
+    height: 38vh;
     width: 100%;
 }
 
 .header-nav {
     display: flex;
-    justify-content: space-around;
-    
-    border: 1px solid blue;
-    height: 40%;
-    
+    height: 36%;
+    width: 40%;
     position: relative;
     top: 2.2rem;
-    width: 55vw;
-    img {
-        border: 3px solid purple;
-        height: 100%;
-
-    }
 }
 
 .header-contacts {
-    width: 15%;
-    margin-right: 3rem;
+    width: 14%;
     height: 40%;
     position: relative;
     top: 2.2rem;
+    left: 10%;
 }
 

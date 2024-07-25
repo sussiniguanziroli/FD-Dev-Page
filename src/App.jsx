@@ -7,7 +7,7 @@ import Contacto from './components/Contacto';
 import Servicios from './components/Servicios';
 
 
-function App() {
+function App() { 
 
 
 
