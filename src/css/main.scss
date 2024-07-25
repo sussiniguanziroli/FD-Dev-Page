@@ -2,6 +2,8 @@
 @import "header.scss";
 @import "nav.scss";
 @import "contacts.scss";
+@import "landing.scss";
+@import "menu.scss";
 
 
 
@@ -10,6 +12,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: $main-white;
 }
 
 

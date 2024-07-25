@@ -4,18 +4,36 @@ const Contacts = () => {
   return (
     <>
     <section className='section-contacts'>
-      <div className='contacts-svgs'>
-        <a href="#"><img  src="../src/assets/logo-tel.svg" alt="telefono" /></a>
+
+        <article className='new-icons'>
+        <div class="wrapper">
+         <div class="button">
+            <div class="icon">
+               <i class="fab fa-facebook-f"></i>
+            </div>
+            <span>Facebook</span>
+         </div>
+         <div class="button">
+            <div class="icon">
+               <i class="fab fa-google"></i>
+            </div>
+            <span>Gmail</span>
+         </div>
+         <div class="button">
+            <div class="icon">
+               <i class="fab fa-instagram"></i>
+            </div>
+            <span>Instagram</span>
+         </div>
+         <div class="button">
+            <div class="icon">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <span>WhatsApp</span>
+         </div>
       </div>
-      <div className='contacts-svgs'>
-        <a href="#"><img src="../src/assets/logo-whatsapp.svg" alt="whatsapp" /></a>
-      </div>
-      <div className='contacts-svgs'>
-        <a href="#"><img src="../src/assets/logo-instagram.svg" alt="instagram" /></a>
-      </div>
-      <div className='contacts-svgs'>
-        <a href="#"><img src="../src/assets/logo-mail.svg" alt="email" /></a> 
-      </div>
+        </article>
+
       
     </section>
     </>

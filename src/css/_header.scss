@@ -1,11 +1,14 @@
 .header {
     display: flex;
     gap: 32vw;
-    background-image: url("../assets/background-nav.png");
+    background-image: url("../assets/header-bg-update.png");
     background-size: 90%; 
     background-repeat: no-repeat;
     height: 38vh;
     width: 100%;
+    @media (max-width: 1330px) {
+        display: none;
+    }
 }
 
 .header-nav {
@@ -14,13 +17,18 @@
     width: 40%;
     position: relative;
     top: 2.2rem;
+    @media (max-width: 1330px) {
+        display: none;
+    }
 }
 
 .header-contacts {
-    width: 14%;
+    width: 30%;
     height: 40%;
     position: relative;
     top: 2.2rem;
-    left: 10%;
+    left: 7%;
 }
+
+
 
