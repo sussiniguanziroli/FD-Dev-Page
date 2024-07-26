@@ -1,8 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 
-const Landing = () => {
+const Landing = ({ startAnimation }) => {
+    const [landingAnimation, setLandingAnimation] = useState(false);
+
+    useEffect(() => {
+        if (startAnimation) {
+            const timer = setTimeout(() => {
+                setLandingAnimation(true);
+            }, 0); // Comienza inmediatamente cuando `startAnimation` es `true`
+
+            return () => clearTimeout(timer);
+        }
+    }, [startAnimation]);
+
     return (
-        <main className='landing-main'>
+        <main className={`landing-main ${landingAnimation ? 'fade-in' : ''}`}>
             <section className='landing-section'>
                 <article className='first-article'>
                     <h2>Tu página web, sin estrés</h2>
@@ -16,9 +28,8 @@ const Landing = () => {
             </section>
 
             <div className='landing-image'></div>
-
         </main>
-    )
+    );
 }
 
-export default Landing
+export default Landing;

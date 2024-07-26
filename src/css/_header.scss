@@ -1,34 +1,78 @@
+/* Header.scss */
+
+/* Estilos base para el header */
 .header {
     display: flex;
     gap: 38vw;
     background-image: url("../assets/header-bg-update.png");
-    background-size: 90%; 
+    background-size: 90%;
     background-repeat: no-repeat;
     height: 38vh;
     width: 100%;
     z-index: 1;
+    position: relative;
+    overflow: hidden; /* Asegura que el fondo no se desborde */
     @media (max-width: 1330px) {
         display: none;
     }
 }
 
+/* Animación del fondo del header */
+.header.animated {
+    animation: bgMove 2s forwards; /* Ajusta el tiempo de la animación */
+}
+
+@keyframes bgMove {
+    0% {
+        background-size: 0%;
+    }
+    100% {
+        background-size: 90%;
+    }
+}
+
+/* Animación para el logo */
 .header-nav {
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 1s ease-in; /* Transición suave para fade-in */
     display: flex;
     height: 36%;
     width: 40%;
     position: relative;
     top: 2.2rem;
-    @media (max-width: 1330px) {
-        display: none;
+
+    &.fade-in {
+        opacity: 1; /* Se vuelve visible cuando la animación empieza */
+    }
+
+    img {
+        animation: imgResize 2s forwards; /* Ajusta el tiempo de la animación */
     }
 }
 
+@keyframes imgResize {
+    0% {
+        transform: scale(0.5);
+        top: 0;
+        left: 0;
+    }
+    100% {
+        transform: scale(1);
+        top: 2.2rem;
+        left: 0;
+    }
+}
+
+/* Animación para los contactos */
 .header-contacts {
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 1s ease-in; /* Transición suave para fade-in */
     width: 30%;
     height: 40%;
     position: relative;
     top: 2.2rem;
+
+    &.fade-in {
+        opacity: 1; /* Se vuelve visible cuando la animación empieza */
+    }
 }
-
-
-

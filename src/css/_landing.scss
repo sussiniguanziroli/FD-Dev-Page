@@ -1,12 +1,22 @@
+/* Landing.scss */
+
+/* Estilos base para el landing */
 .landing-main {
     display: flex;
     height: 80vh;
-    z-index: 3;
+    z-index: 2;
     position: absolute;
     top: 18%;
     width: 100vw;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 1.5s ease-in; /* Transición suave para fade-in */
+
+    &.fade-in {
+        opacity: 1; /* Se vuelve visible cuando la animación empieza */
+    }
 }
 
+/* Estilos para la sección del landing */
 .landing-section {
     position: relative;
     top: 17%;
@@ -21,6 +31,7 @@
     padding-right: 0;
 }
 
+/* Estilos para el primer artículo */
 .first-article {
     display: flex;
     flex-direction: column;
@@ -29,51 +40,56 @@
     margin-left: 2rem;
     height: 40%;
     font-family: "Raleway", sans-serif;
+
     h1 {
         font-size: 5.5rem;
     }
+
     h2 {
         padding-bottom: 1rem;
         font-size: 2rem;
     }
 }
 
+/* Estilos para el segundo artículo */
 .second-article {
     margin-left: 1.5rem;
     font-family: "Poppins", sans-serif;
-    color: $text-gray;
+    color: $text-gray; /* Asegúrate de definir esta variable en tu archivo de variables */
+
     p {
-        margin-bottom: .5rem;
+        margin-bottom: 0.5rem;
         font-weight: 400;
     }
+
     strong {
         font-size: 1.2rem;
     }
-    
 }
 
+/* Estilos para el botón de la sección del landing */
 .landing-section-button {
     border: none;
     margin-left: 1.6rem;
-    background-color: $button-yellow;
+    background-color: $button-yellow; /* Asegúrate de definir esta variable en tu archivo de variables */
     font-family: "Raleway", sans-serif;
     font-size: 1.2rem;
-    padding: .7rem;
+    padding: 0.7rem;
     color: #fafafa;
     font-weight: 700;
-    border-radius: .9rem;
+    border-radius: 0.9rem;
     margin-bottom: -1rem;
     cursor: pointer;
-    // animacion del boton
     transition: all 0.2s;
     transition-timing-function: ease-out;
+
+    &:hover {
+        color: $main-white; /* Asegúrate de definir esta variable en tu archivo de variables */
+        background-color: black;
+    }
 }
 
-.landing-section-button:hover {
-    color: $main-white;
-    background-color: black;
-}
-
+/* Estilos para la imagen de fondo del landing */
 .landing-image {
     height: 100%;
     width: 100%;
@@ -81,6 +97,4 @@
     background-size: 120%;
     background-repeat: no-repeat;
     background-position: center;
-
-    
 }
