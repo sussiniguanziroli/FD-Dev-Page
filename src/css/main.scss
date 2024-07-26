@@ -18,6 +18,10 @@ body {
     background-color: $main-white;
 }
 
+::selection {
+    background-color: $button-yellow; /* Fondo amarillo */
+    color: #000000; /* Texto negro */
+}
 
 //fonts
 

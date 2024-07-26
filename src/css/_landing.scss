@@ -1,0 +1,86 @@
+.landing-main {
+    display: flex;
+    height: 80vh;
+    z-index: 3;
+    position: absolute;
+    top: 18%;
+    width: 100vw;
+}
+
+.landing-section {
+    position: relative;
+    top: 17%;
+    left: 4%;
+    height: 70%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 3rem;
+    padding-right: 0;
+}
+
+.first-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin-left: 2rem;
+    height: 40%;
+    font-family: "Raleway", sans-serif;
+    h1 {
+        font-size: 5.5rem;
+    }
+    h2 {
+        padding-bottom: 1rem;
+        font-size: 2rem;
+    }
+}
+
+.second-article {
+    margin-left: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    color: $text-gray;
+    p {
+        margin-bottom: .5rem;
+        font-weight: 400;
+    }
+    strong {
+        font-size: 1.2rem;
+    }
+    
+}
+
+.landing-section-button {
+    border: none;
+    margin-left: 1.6rem;
+    background-color: $button-yellow;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.2rem;
+    padding: .7rem;
+    color: #fafafa;
+    font-weight: 700;
+    border-radius: .9rem;
+    margin-bottom: -1rem;
+    cursor: pointer;
+    // animacion del boton
+    transition: all 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.landing-section-button:hover {
+    color: $main-white;
+    background-color: black;
+}
+
+.landing-image {
+    height: 100%;
+    width: 100%;
+    background-image: url("../../src/assets/main-img.png");
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    
+}
