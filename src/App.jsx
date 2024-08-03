@@ -8,11 +8,13 @@ import Contacto from './components/contacto/Contacto';
 import Servicios from './components/servicios/Servicios';
 import logo from './assets/fd-logo.png';
 import Compuerta from './components/Compuerta';
+import Footer from './components/Footer';
 
 function App() {
     const [compuertaAnimationComplete, setCompuertaAnimationComplete] = useState(false);
 
     return (
+       
         <BrowserRouter>
             <Compuerta logo={logo} onAnimationComplete={() => setCompuertaAnimationComplete(true)} />
             <Header />
@@ -23,6 +25,7 @@ function App() {
                 <Route path='/servicios' element={<Servicios />} />
             </Routes>
         </BrowserRouter>
+        
     );
 }
 

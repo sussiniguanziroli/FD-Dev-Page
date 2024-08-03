@@ -1,7 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
+import AboutUs from './AboutUs';
+import InitialServices from './InitialServices';
 
 const Landing = ({ startAnimation }) => {
     const [landingAnimation, setLandingAnimation] = useState(false);
+    const aboutUsRef = useRef(null); // Crea una referencia para AboutUs
 
     useEffect(() => {
         if (startAnimation) {
@@ -13,22 +16,36 @@ const Landing = ({ startAnimation }) => {
         }
     }, [startAnimation]);
 
-    return (
-        <main className={`landing-main ${landingAnimation ? 'fade-in' : ''}`}>
-            <section className='landing-section'>
-                <article className='first-article'>
-                    <h2>Tu página web, sin estrés</h2>
-                    <h1>DISEÑO WEB</h1>
-                </article>
-                <article className='second-article'>
-                    <p>En <strong>Facil Digital</strong>, diseñamos y desarrollamos sitios web atractivos, creamos logos únicos y ofrecemos asesoramiento personalizado. También nos encargamos del mantenimiento de tu web, asegurando su óptimo rendimiento.</p>
-                    <strong>Transforma tu presencia digital con nosotros.</strong>
-                </article>
-                <button className='landing-section-button'>CONOCE MÁS</button>
-            </section>
+    const scrollToAboutUs = () => {
+        if (aboutUsRef.current) {
+            aboutUsRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
-            <div className='landing-image'></div>
-        </main>
+    return (
+        <aside className='landing-aside'>
+            <main className={`landing-main ${landingAnimation ? 'fade-in' : ''}`}>
+                <section className='landing-section'>
+                    <article className='first-article'>
+                        <h2>Tu página web, sin estrés</h2>
+                        <h1>DISEÑO WEB</h1>
+                    </article>
+                    <article className='second-article'>
+                        <p>En <strong>Fácil Digital</strong>, diseñamos y desarrollamos sitios web atractivos, creamos logos únicos y ofrecemos asesoramiento personalizado. También nos encargamos del mantenimiento de tu web, asegurando su óptimo rendimiento.</p>
+                        <strong>Transforma tu presencia digital con nosotros.</strong>
+                    </article>
+                    <button className='landing-section-button' onClick={scrollToAboutUs}>CONOCE MÁS</button>
+                </section>
+
+                <div className='landing-image'></div>
+            </main>
+            <div className='about-us' ref={aboutUsRef}>
+                <AboutUs />
+            </div>
+            <div className='initial-services'>
+                <InitialServices />
+            </div>
+        </aside>
     );
 }
 

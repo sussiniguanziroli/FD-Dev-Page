@@ -5,6 +5,9 @@
 @import "landing.scss";
 @import "menu.scss";
 @import "compuerta.scss";
+@import "aboutus.scss";
+@import "initialservices.scss";
+@import "footer.scss";
 
 
 
@@ -13,15 +16,29 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    scrollbar-width: none;
+    -ms-overflow-style: none; /* IE y Edge antiguos */
+  }
+
+
 
 body {
     background-color: $main-white;
 }
 
 ::selection {
-    background-color: $button-yellow; /* Fondo amarillo */
-    color: #000000; /* Texto negro */
+    background-color: $button-yellow;
+    /* Fondo amarillo */
+    color: #000000;
+    /* Texto negro */
 }
 
 //fonts

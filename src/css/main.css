@@ -215,6 +215,21 @@
 }
 
 /* Landing.scss */
+.initial-services {
+  position: absolute;
+  top: 200%;
+  /* Ajusta este valor según sea necesario */
+  padding-bottom: 6%;
+}
+
+.about-us {
+  position: absolute;
+  top: 100%;
+  /* Ajusta este valor según sea necesario */
+  margin-left: 10%;
+  padding-bottom: 6%;
+}
+
 /* Estilos base para el landing */
 .landing-main {
   display: flex;
@@ -222,12 +237,15 @@
   z-index: 2;
   position: absolute;
   top: 18%;
-  width: 100vw;
-  opacity: 0; /* Inicialmente invisible */
-  transition: opacity 1.5s ease-in; /* Transición suave para fade-in */
+  width: 100%;
+  opacity: 0;
+  /* Inicialmente invisible */
+  transition: opacity 1.5s ease-in;
+  /* Transición suave para fade-in */
 }
 .landing-main.fade-in {
-  opacity: 1; /* Se vuelve visible cuando la animación empieza */
+  opacity: 1;
+  /* Se vuelve visible cuando la animación empieza */
 }
 
 /* Estilos para la sección del landing */
@@ -251,9 +269,10 @@
   flex-direction: column;
   justify-content: space-evenly;
   padding: 1rem;
-  margin-left: 2rem;
+  margin-left: 1.4rem;
   height: 40%;
   font-family: "Raleway", sans-serif;
+  width: 100%;
 }
 .first-article h1 {
   font-size: 5.5rem;
@@ -267,11 +286,13 @@
 .second-article {
   margin-left: 1.5rem;
   font-family: "Poppins", sans-serif;
-  color: #2c2c2c; /* Asegúrate de definir esta variable en tu archivo de variables */
+  color: #2c2c2c;
+  /* Asegúrate de definir esta variable en tu archivo de variables */
 }
 .second-article p {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
   font-weight: 400;
+  font-size: 1.1rem;
 }
 .second-article strong {
   font-size: 1.2rem;
@@ -281,20 +302,23 @@
 .landing-section-button {
   border: none;
   margin-left: 1.6rem;
-  background-color: #F5B31F; /* Asegúrate de definir esta variable en tu archivo de variables */
+  background-color: #F5B31F;
+  /* Asegúrate de definir esta variable en tu archivo de variables */
   font-family: "Raleway", sans-serif;
   font-size: 1.2rem;
   padding: 0.7rem;
   color: #fafafa;
   font-weight: 700;
   border-radius: 0.9rem;
-  margin-bottom: -1rem;
+  margin-bottom: -2rem;
   cursor: pointer;
   transition: all 0.2s;
   transition-timing-function: ease-out;
+  text-transform: uppercase;
 }
 .landing-section-button:hover {
-  color: #F5F5F5; /* Asegúrate de definir esta variable en tu archivo de variables */
+  color: #F5F5F5;
+  /* Asegúrate de definir esta variable en tu archivo de variables */
   background-color: black;
 }
 
@@ -442,6 +466,7 @@
 }
 
 .intro-overlay {
+  pointer-events: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -521,10 +546,434 @@
     opacity: 0;
   }
 }
+.aboutus-section {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1%;
+  padding: 2%;
+  height: 80vh;
+  width: 80vw;
+  background: radial-gradient(ellipse, white 0%, #F5F5F5 100%);
+  transition: opacity 1s ease-in-out;
+}
+.aboutus-section p {
+  font-size: 1.8rem;
+}
+.aboutus-section.animate {
+  opacity: 1;
+  animation: fadeInUp 1s ease-out;
+}
+.aboutus-section.animate .aboutus-section-gif {
+  animation: scaleIn 1s ease-out forwards;
+  opacity: 0;
+  transform: scale(0.8);
+}
+.aboutus-section.animate .aboutus-section-title h2 {
+  animation-delay: 0.2s;
+}
+.aboutus-section.animate .aboutus-section-title h3 {
+  animation-delay: 0.4s;
+}
+.aboutus-section.animate .aboutus-section-title h2,
+.aboutus-section.animate .aboutus-section-title h3 {
+  animation: fadeInDown 1s ease-out forwards;
+  opacity: 0;
+}
+
+.aboutus-section-title {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  padding: 3%;
+}
+.aboutus-section-title h2 {
+  text-transform: uppercase;
+}
+.aboutus-section-title h3 {
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+.p1 {
+  padding: 2%;
+  margin: 2%;
+  margin-bottom: 6%;
+}
+
+.p2 {
+  padding: 2%;
+  margin: 2%;
+}
+
+.aboutus-section-info {
+  display: flex;
+  padding: 3%;
+}
+
+.aboutus-section-gif {
+  background-image: url(../assets/gif-fd.gif);
+  background-position: center;
+  background-size: contain;
+  width: 120%;
+  background-repeat: no-repeat;
+}
+
+.aboutus-section-ps {
+  padding: 2%;
+}
+.aboutus-section-ps strong a {
+  color: #2c2c2c;
+}
+
+.text-link {
+  transition: all 0.2s;
+  text-decoration: underline;
+  border-radius: 1rem;
+}
+
+.text-link:hover {
+  color: #2c2c2c;
+  background-color: #F5B31F;
+  padding: 1%;
+  text-decoration: none;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.aboutus-section-title h2 {
+  animation-delay: 0.2s;
+}
+
+.aboutus-section-title h3 {
+  animation-delay: 0.4s;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.p1,
+.p2 {
+  animation: slideIn 1s ease-out forwards;
+  opacity: 0;
+}
+
+.p1 {
+  animation-delay: 0.6s;
+}
+
+.p2 {
+  animation-delay: 0.8s;
+}
+
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.initial-services-component {
+  height: 180vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+h1 {
+  font-size: 2.6rem;
+  font-family: "Raleway", sans-serif;
+  padding: 2%;
+  margin-bottom: 2%;
+}
+
+p {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  padding: 2%;
+  color: #2c2c2c;
+}
+
+.service-web {
+  display: flex;
+  align-items: center;
+}
+
+.service-web-img {
+  background-image: url(../assets/servicios-1.png);
+  background-position: 100%;
+  background-size: contain;
+  width: 100%;
+  height: 60vh;
+  background-repeat: no-repeat;
+  position: relative;
+  right: 10%;
+}
+
+.service-web-p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+  padding: 2%;
+  text-align: center;
+  margin: 4%;
+  position: relative;
+  left: 10%;
+}
+.service-web-p h1 {
+  color: #ff66c4;
+  text-transform: uppercase;
+}
+
+.service-asesoramiento {
+  display: flex;
+  align-items: center;
+}
+
+.service-asesoramiento-img {
+  background-image: url(../assets/servicios-2.png);
+  background-position: 0%;
+  background-size: contain;
+  width: 100%;
+  height: 60vh;
+  background-repeat: no-repeat;
+  position: relative;
+  left: 15%;
+}
+
+.service-asesoramiento-p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70vw;
+  padding: 2%;
+  text-align: center;
+  margin: 2%;
+  position: relative;
+  right: 10%;
+}
+.service-asesoramiento-p h1 {
+  color: #269cb6;
+  text-transform: uppercase;
+}
+
+.service-logo {
+  display: flex;
+  align-items: center;
+}
+
+.service-logo-img {
+  background-image: url(../assets/servicios-3.png);
+  background-position: 100%;
+  background-size: contain;
+  width: 100%;
+  height: 60vh;
+  background-repeat: no-repeat;
+  position: relative;
+  right: 15%;
+}
+
+.service-logo-p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+  padding: 2%;
+  text-align: center;
+  margin: 4%;
+  position: relative;
+  left: 10%;
+}
+.service-logo-p h1 {
+  color: #f38759;
+  text-transform: uppercase;
+}
+
+.article-services-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8%;
+  padding: 6%;
+}
+
+.article-services-list-img {
+  background-image: url(../assets/servicios-4.png);
+  width: 100%;
+  height: 65vh;
+  background-position: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.article-services-list-items {
+  padding: 2%;
+}
+
+.article-services-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Raleway", sans-serif;
+}
+.article-services-items h4 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2%;
+  color: #2c2c2c;
+}
+.article-services-items ion-icon {
+  font-size: 32px;
+  margin-right: 3%;
+  --ionicon-stroke-width: 1.9rem;
+}
+
+.article-services-title {
+  font-size: 1.8rem;
+  padding: 2%;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+}
+
+.article-services-p {
+  font-size: 1.1rem;
+  padding: 5% 2%;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: #2c2c2c;
+}
+
+.article-services-button {
+  color: black;
+  margin: 7% 0% 0%;
+  padding: 2% 6%;
+  background-color: #F5B31F;
+  border: 2px solid black;
+  border-radius: 1.3rem;
+  font-size: 1.2rem;
+  width: 100%;
+  text-transform: capitalize;
+}
+
+.main-footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #e1e1e1;
+  width: 100vw;
+}
+
+.footer-button {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  color: #2c2c2c;
+  background-color: transparent;
+  font-weight: 700;
+}
+
+.buttons-section {
+  display: flex;
+  justify-content: space-around;
+  width: 45vw;
+  height: 100%;
+  padding: 1%;
+}
+
+.fd-logo-section {
+  background-image: url(../assets/logo-fd.png);
+  height: 10vh;
+  width: 10vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footer-upper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 2%;
+}
+
+.footer-lower {
+  display: flex;
+  justify-content: center;
+}
+
+.lower-border {
+  border-top: 1px solid black;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+}
+.lower-border p {
+  font-size: 1.2rem;
+}
+
+.lower-contact {
+  position: absolute;
+  right: 2%;
+  bottom: 8%;
+}
+.lower-contact .foot {
+  background-color: transparent;
+  box-shadow: none;
+  transition: all 0.5s;
+}
+.lower-contact .foot:hover {
+  background-color: #F5F5F5;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none; /* IE y Edge antiguos */
 }
 
 body {
@@ -532,8 +981,10 @@ body {
 }
 
 ::selection {
-  background-color: #F5B31F; /* Fondo amarillo */
-  color: #000000; /* Texto negro */
+  background-color: #F5B31F;
+  /* Fondo amarillo */
+  color: #000000;
+  /* Texto negro */
 }
 
 /*# sourceMappingURL=main.css.map */

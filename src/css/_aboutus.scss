@@ -1,0 +1,187 @@
+.aboutus-section {
+
+    //border: 1px solid red;
+    p {
+        font-size: 1.8rem;
+
+    }
+
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1%;
+    padding: 2%;
+    height: 80vh;
+    width: 80vw;
+    //gradiente
+    background: radial-gradient(ellipse, white 0%, $main-white 100%);
+
+    transition: opacity 1s ease-in-out;
+
+    &.animate {
+        opacity: 1;
+        animation: fadeInUp 1s ease-out;
+        .aboutus-section-gif {
+            animation: scaleIn 1s ease-out forwards;
+            opacity: 0; // Empieza oculto
+            transform: scale(0.8); // Empieza pequeño
+        }
+        .aboutus-section-title h2 {
+            animation-delay: 0.2s; // Retraso para h2
+        }
+
+        .aboutus-section-title h3 {
+            animation-delay: 0.4s; // Retraso para h3
+        }
+
+        .aboutus-section-title h2,
+        .aboutus-section-title h3 {
+            animation: fadeInDown 1s ease-out forwards;
+            opacity: 0; // Empieza oculto
+        }
+    }
+}
+
+.aboutus-section-title {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+
+    h2 {
+        text-transform: uppercase;
+    }
+
+    h3 {
+        font-weight: 400;
+        font-size: 3rem;
+    }
+
+    padding: 3%;
+
+}
+
+.p1 {
+    padding: 2%;
+    margin: 2%;
+    margin-bottom: 6%;
+}
+
+.p2 {
+    padding: 2%;
+    margin: 2%;
+}
+
+.aboutus-section-info {
+    display: flex;
+    padding: 3%;
+}
+
+.aboutus-section-gif {
+    background-image: url(../assets/gif-fd.gif);
+    background-position: center;
+    background-size: contain;
+    width: 120%;
+    background-repeat: no-repeat;
+}
+
+.aboutus-section-ps {
+    padding: 2%;
+    strong {
+        a {
+            color: $text-gray;
+        }
+    }
+}
+
+.text-link {
+    transition: all .2s;
+    text-decoration: underline;
+    border-radius: 1rem;
+}
+
+.text-link:hover {
+    color: $text-gray;
+    background-color: $button-yellow;
+    padding: 1%;
+    text-decoration: none;
+}
+
+
+//animaciones
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+//-----------------------------------------------------
+// Animación del título
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.aboutus-section-title h2 {
+    animation-delay: 0.2s; // Retraso para h2
+}
+
+.aboutus-section-title h3 {
+    animation-delay: 0.4s; // Retraso para h3
+}
+
+// Animación de párrafos
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.p1,
+.p2 {
+    animation: slideIn 1s ease-out forwards;
+    opacity: 0; // Empieza oculto
+}
+
+.p1 {
+    animation-delay: 0.6s; // Retraso para p1
+}
+
+.p2 {
+    animation-delay: 0.8s; // Retraso para p2
+}
+
+// Animación del GIF
+@keyframes scaleIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
