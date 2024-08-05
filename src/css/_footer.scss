@@ -68,4 +68,7 @@
     .foot:hover {
         background-color: $main-white;
     }
+    @media (max-width: 1330px) {
+        display: none;
+    }
 }

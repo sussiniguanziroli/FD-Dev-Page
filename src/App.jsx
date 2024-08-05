@@ -8,7 +8,6 @@ import Contacto from './components/contacto/Contacto';
 import Servicios from './components/servicios/Servicios';
 import logo from './assets/fd-logo.png';
 import Compuerta from './components/Compuerta';
-import Footer from './components/Footer';
 
 function App() {
     const [compuertaAnimationComplete, setCompuertaAnimationComplete] = useState(false);

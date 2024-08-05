@@ -1,7 +1,7 @@
 .nav-burger {
     width: 100%;
     height: 5em;
-    background-color: $azul-de-titulo;
+    background-color: $text-gray;
     border-radius: 1px solid;
     display: flex;
     justify-content: flex-start;
@@ -12,31 +12,35 @@
 .burger-menu {
     height: 100%;
     width: 4em;
-    background-color: $azul-de-titulo;
+    background-color: $text-gray;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
     cursor: pointer;
-    z-index: 4;
+    z-index: 6;
 }
 
 .burger-bar {
     width: 4em;
     height: 0.5em;
-    background-color: white;
+    background-color: $main-white;
     border-radius: 0.5em;
     z-index: 4;
 }
 
 .menu {
-    width: 50%;
-    height: 91vh;
-    background-color: $azul-de-titulo;
-    z-index: 4;
-    position: absolute;
-    top: 5em;
+    width: 30%;
+    height: 100vh;
+    background-color: $text-gray;
+    z-index: 6;
+    position: fixed;
+    top: 8vh;
     transition: all 0.3s;
+    overflow: hidden;
+    @media (max-width: 600px) {
+        top: 6vh;
+    }
 }
 
 .slide-right {
@@ -98,8 +102,8 @@
 
 .burger-nav-menu {
     width: fit-content;
-    height: fit-content;
-    background-color: $azul-de-titulo;
+    height: 40vh;
+    background-color: $text-gray;
     position: relative;
     z-index: 6;
     ul {
@@ -112,8 +116,9 @@
 }
 
 .burger-nav-item {
-    background-color: $azul-de-titulo;
+    background-color: $text-gray;
     text-decoration: none;
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: x-large;
     color: white;
@@ -160,3 +165,8 @@
     display: block; /* Muestra la capa de fondo oscuro cuando el menú está activo */
     
 }
+
+.no-scroll {
+    overflow: hidden; /* Desactiva el scroll en la página */
+  }
+  

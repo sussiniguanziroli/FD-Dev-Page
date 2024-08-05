@@ -48,6 +48,9 @@
     align-items: flex-start;
     padding: 3rem;
     padding-right: 0;
+    @media (max-width: 600px) {
+        top: 5%;
+    }
 }
 
 /* Estilos para el primer artículo */
@@ -120,4 +123,8 @@
     background-size: 120%;
     background-repeat: no-repeat;
     background-position: center;
+    @media (max-width: 1330px) {
+        display: none;
+    }
 }
+

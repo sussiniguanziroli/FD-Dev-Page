@@ -39,6 +39,9 @@ p {
     background-repeat: no-repeat;
     position: relative;
     right: 10%;
+    @media (max-width: 1330px) {
+        display: none;
+    }
 }
 
 .service-web-p {
@@ -74,6 +77,9 @@ p {
     background-repeat: no-repeat;
     position: relative;
     left: 15%;
+    @media (max-width: 1330px) {
+        display: none;
+    }
 }
 
 .service-asesoramiento-p {
@@ -109,6 +115,10 @@ p {
     background-repeat: no-repeat;
     position: relative;
     right: 15%;
+    @media (max-width: 1330px) {
+        display: none;
+        
+    }
 }
 
 .service-logo-p {
@@ -145,6 +155,10 @@ p {
     background-position: 100%;
     background-size: contain;
     background-repeat: no-repeat;
+    @media (max-width: 1330px) {
+        display: none;
+        
+    }
 }
 
 .article-services-list-items {
@@ -199,3 +213,5 @@ p {
     width: 100%;
     text-transform: capitalize;
 }
+
+

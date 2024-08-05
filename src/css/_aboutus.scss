@@ -38,6 +38,9 @@
             opacity: 0; // Empieza oculto
         }
     }
+
+    
+      
 }
 
 .aboutus-section-title {
@@ -48,15 +51,23 @@
 
     h2 {
         text-transform: uppercase;
+        @media (max-width: 600px) {
+            font-size: 1.7rem;
+        }
+    
     }
 
     h3 {
         font-weight: 400;
         font-size: 3rem;
+        @media (max-width: 600px) {
+            font-size: 1.7rem;
+        }
+    
     }
 
     padding: 3%;
-
+    
 }
 
 .p1 {
@@ -81,6 +92,9 @@
     background-size: contain;
     width: 120%;
     background-repeat: no-repeat;
+    @media (max-width: 600px) {
+        display: none;
+    }
 }
 
 .aboutus-section-ps {
