@@ -257,7 +257,7 @@
 /* Estilos para la sección del landing */
 .landing-section {
   position: relative;
-  top: 17%;
+  top: 13%;
   left: 4%;
   height: 90%;
   width: 70%;
@@ -265,7 +265,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  padding: 3rem;
+  padding: 2rem;
   padding-right: 0;
 }
 @media (max-width: 600px) {
@@ -281,7 +281,7 @@
   justify-content: space-evenly;
   padding: 1rem;
   margin-left: 1.4rem;
-  height: 40%;
+  height: 70%;
   font-family: "Raleway", sans-serif;
   width: 120%;
   margin-left: 1.5rem;
@@ -311,7 +311,8 @@
 /* Estilos para el botón de la sección del landing */
 .landing-section-button {
   border: none;
-  margin-left: 1.6rem;
+  margin-left: 6%;
+  margin-bottom: 5%;
   background-color: #F5B31F;
   /* Asegúrate de definir esta variable en tu archivo de variables */
   font-family: "Raleway", sans-serif;
