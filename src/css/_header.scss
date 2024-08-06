@@ -2,15 +2,15 @@
 
 /* Estilos base para el header */
 .header {
+    border: 1px solid red;
     display: flex;
     justify-content: space-between;
     background-image: url("https://i.ibb.co/g94Ksg2/header-bg-update.pngs");
     background-size: 90%;
     background-repeat: no-repeat;
-    height: 22rem;
+    height: 21rem;
     width: 100%;
     z-index: 1;
-    position: relative;
     overflow: hidden; /* Asegura que el fondo no se desborde */
     @media (max-width: 1330px) {
         display: none;
@@ -27,7 +27,7 @@
         background-size: 0%;
     }
     100% {
-        background-size: 108rem;
+        background-size: 105rem;
     }
 }
 
@@ -37,7 +37,7 @@
     transition: opacity 1s ease-in; /* Transición suave para fade-in */
     display: flex;
     height: 36%;
-    width: 40%;
+    width: 47rem;
     position: relative;
     top: 11%;
 
