@@ -222,12 +222,6 @@
   padding-bottom: 6%;
 }
 
-@media (max-height: 870px) {
-  .landing-aside {
-    display: none;
-  }
-}
-
 .about-us {
   position: absolute;
   top: 100%;
