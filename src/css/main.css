@@ -222,6 +222,12 @@
   padding-bottom: 6%;
 }
 
+@media (max-height: 870px) {
+  .landing-aside {
+    display: none;
+  }
+}
+
 .about-us {
   position: absolute;
   top: 100%;
@@ -253,7 +259,7 @@
   position: relative;
   top: 17%;
   left: 4%;
-  height: 70%;
+  height: 90%;
   width: 70%;
   display: flex;
   flex-direction: column;
@@ -277,7 +283,10 @@
   margin-left: 1.4rem;
   height: 40%;
   font-family: "Raleway", sans-serif;
-  width: 100%;
+  width: 120%;
+  margin-left: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  /* Asegúrate de definir esta variable en tu archivo de variables */
 }
 .first-article h1 {
   font-size: 5.5rem;
@@ -285,22 +294,18 @@
 .first-article h2 {
   padding-bottom: 1rem;
   font-size: 2rem;
+  color: black;
 }
-
-/* Estilos para el segundo artículo */
-.second-article {
-  margin-left: 1.5rem;
-  font-family: "Poppins", sans-serif;
-  color: #2c2c2c;
-  /* Asegúrate de definir esta variable en tu archivo de variables */
-}
-.second-article p {
+.first-article p {
   margin-bottom: 0.7rem;
   font-weight: 400;
   font-size: 1.1rem;
+  color: #2c2c2c;
+  width: 80%;
 }
-.second-article strong {
+.first-article strong {
   font-size: 1.2rem;
+  color: #2c2c2c;
 }
 
 /* Estilos para el botón de la sección del landing */
@@ -315,7 +320,6 @@
   color: #fafafa;
   font-weight: 700;
   border-radius: 0.9rem;
-  margin-bottom: -2rem;
   cursor: pointer;
   transition: all 0.2s;
   transition-timing-function: ease-out;

@@ -29,8 +29,6 @@ const Landing = ({ startAnimation }) => {
                     <article className='first-article'>
                         <h2>Tu página web, sin estrés</h2>
                         <h1>DISEÑO WEB</h1>
-                    </article>
-                    <article className='second-article'>
                         <p>En <strong>Fácil Digital</strong>, diseñamos y desarrollamos sitios web atractivos, creamos logos únicos y ofrecemos asesoramiento personalizado. También nos encargamos del mantenimiento de tu web, asegurando su óptimo rendimiento.</p>
                         <strong>Transforma tu presencia digital con nosotros.</strong>
                     </article>

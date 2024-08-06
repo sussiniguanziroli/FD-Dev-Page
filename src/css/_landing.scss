@@ -3,7 +3,13 @@
     position: absolute;
     top: 200%;
     /* Ajusta este valor según sea necesario */
-    padding-bottom: 6%;
+    padding-bottom:6%;
+}
+
+.landing-aside {
+    @media (max-height: 870px) {
+        display: none;
+    }
 }
 
 .about-us {
@@ -40,7 +46,7 @@
     position: relative;
     top: 17%;
     left: 4%;
-    height: 70%;
+    height: 90%;
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -62,34 +68,37 @@
     margin-left: 1.4rem;
     height: 40%;
     font-family: "Raleway", sans-serif;
-    width: 100%;
+    width: 120%;
     h1 {
         font-size: 5.5rem;
+        
     }
 
     h2 {
         padding-bottom: 1rem;
         font-size: 2rem;
+        color: black;
     }
-}
-
-/* Estilos para el segundo artículo */
-.second-article {
     margin-left: 1.5rem;
     font-family: "Poppins", sans-serif;
-    color: $text-gray;
+    
     /* Asegúrate de definir esta variable en tu archivo de variables */
 
     p {
         margin-bottom: 0.7rem;
         font-weight: 400;
         font-size: 1.1rem;
+        color: $text-gray;
+        width: 80%;
     }
 
     strong {
         font-size: 1.2rem;
+        color: $text-gray;
     }
 }
+
+
 
 /* Estilos para el botón de la sección del landing */
 .landing-section-button {
@@ -103,7 +112,6 @@
     color: #fafafa;
     font-weight: 700;
     border-radius: 0.9rem;
-    margin-bottom: -2rem;
     cursor: pointer;
     transition: all 0.2s;
     transition-timing-function: ease-out;
