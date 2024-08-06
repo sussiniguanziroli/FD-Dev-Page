@@ -21,7 +21,7 @@ export const Header = ({ onAnimationComplete }) => {
         <Menu/>
         <header className={`header ${headerAnimation ? 'animated' : ''}`}>
             <div className={`header-nav ${headerAnimation ? 'fade-in' : ''}`}>
-                <img src="../src/assets/fd-logo.png" alt="logoFD" className={`${headerAnimation ? 'img-animate' : ''}`} />
+                <img src="https://i.ibb.co/LYkm2bC/fd-logo.png" alt="logoFD" className={`${headerAnimation ? 'img-animate' : ''}`} />
                 <NavBar />
             </div>
             <div className={`header-contacts ${headerAnimation ? 'fade-in' : ''}`}>
