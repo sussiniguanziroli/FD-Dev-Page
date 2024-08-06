@@ -6,11 +6,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 .header {
   display: flex;
-  gap: 38vw;
+  justify-content: space-between;
   background-image: url("https://i.ibb.co/g94Ksg2/header-bg-update.pngs");
   background-size: 90%;
   background-repeat: no-repeat;
-  height: 38vh;
+  height: 22rem;
   width: 100%;
   z-index: 1;
   position: relative;
@@ -32,7 +32,7 @@
     background-size: 0%;
   }
   100% {
-    background-size: 90%;
+    background-size: 108rem;
   }
 }
 /* Animación para el logo */
@@ -43,7 +43,7 @@
   height: 36%;
   width: 40%;
   position: relative;
-  top: 2.2rem;
+  top: 11%;
 }
 .header-nav.fade-in {
   opacity: 1; /* Se vuelve visible cuando la animación empieza */
@@ -60,7 +60,7 @@
   }
   100% {
     transform: scale(1);
-    top: 2.2rem;
+    top: 11%;
     left: 0;
   }
 }
@@ -68,10 +68,10 @@
 .header-contacts {
   opacity: 0; /* Inicialmente invisible */
   transition: opacity 1s ease-in; /* Transición suave para fade-in */
-  width: 30%;
+  width: 25rem;
   height: 40%;
   position: relative;
-  top: 2.2rem;
+  top: 10%;
 }
 .header-contacts.fade-in {
   opacity: 1; /* Se vuelve visible cuando la animación empieza */
