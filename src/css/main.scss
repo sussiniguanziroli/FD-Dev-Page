@@ -5,15 +5,22 @@
 @import "landing.scss";
 @import "menu.scss";
 @import "compuerta.scss";
-@import "aboutus.scss";
-@import "initialservices.scss";
 @import "footer.scss";
-@import "mediaqueries.scss";
+@import "inicio.scss";
+@import "app.scss";
 
+html {
+    font-size: 16px;
+    @media (max-width: 769px) {
+        font-size: 10px;
+    }
+}
 
-
-
-
+:root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 * {
     padding: 0;
@@ -28,8 +35,9 @@
 
 * {
     scrollbar-width: none;
-    -ms-overflow-style: none; /* IE y Edge antiguos */
-  }
+    -ms-overflow-style: none;
+    /* IE y Edge antiguos */
+}
 
 
 

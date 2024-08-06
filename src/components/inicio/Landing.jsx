@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
-import AboutUs from './AboutUs';
-import InitialServices from './InitialServices';
+
+
 
 const Landing = ({ startAnimation }) => {
     const [landingAnimation, setLandingAnimation] = useState(false);
@@ -23,7 +23,7 @@ const Landing = ({ startAnimation }) => {
     };
 
     return (
-        <aside className='landing-aside'>
+       
             <main className={`landing-main ${landingAnimation ? 'fade-in' : ''}`}>
                 <section className='landing-section'>
                     <article className='first-article'>
@@ -38,13 +38,8 @@ const Landing = ({ startAnimation }) => {
 
                 <div className='landing-image'></div>
             </main>
-            <div className='about-us' ref={aboutUsRef}>
-                <AboutUs />
-            </div>
-            <div className='initial-services'>
-                <InitialServices />
-            </div>
-        </aside>
+            
+        
     );
 }
 
