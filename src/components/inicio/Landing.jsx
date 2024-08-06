@@ -31,8 +31,9 @@ const Landing = ({ startAnimation }) => {
                         <h1>DISEÑO WEB</h1>
                         <p>En <strong>Fácil Digital</strong>, diseñamos y desarrollamos sitios web atractivos, creamos logos únicos y ofrecemos asesoramiento personalizado. También nos encargamos del mantenimiento de tu web, asegurando su óptimo rendimiento.</p>
                         <strong>Transforma tu presencia digital con nosotros.</strong>
+                        <button className='landing-section-button' onClick={scrollToAboutUs}>CONOCE MÁS</button>
                     </article>
-                    <button className='landing-section-button' onClick={scrollToAboutUs}>CONOCE MÁS</button>
+                    
                 </section>
 
                 <div className='landing-image'></div>

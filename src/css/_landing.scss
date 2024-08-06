@@ -40,16 +40,12 @@
 /* Estilos para la sección del landing */
 .landing-section {
     position: relative;
-    top: 13%;
+    top: 15%;
     left: 4%;
-    height: 90%;
+    height: 80%;
     width: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 2rem;
-    padding-right: 0;
+    
+    padding: 2%;
     @media (max-width: 600px) {
         top: 5%;
     }
@@ -60,32 +56,33 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 1rem;
-    margin-left: 1.4rem;
-    height: 70%;
+    align-items: flex-start;
+    padding: 2%;
+    height: 100%;
     font-family: "Raleway", sans-serif;
     width: 120%;
     h1 {
-        font-size: 5.5rem;
-        
+        font-size: 5.2rem;
+        padding-left: 0;
     }
 
     h2 {
-        padding-bottom: 1rem;
+        padding-bottom: 1%;
         font-size: 2rem;
         color: black;
     }
-    margin-left: 1.5rem;
+    margin-left: 3%;
     font-family: "Poppins", sans-serif;
     
     /* Asegúrate de definir esta variable en tu archivo de variables */
 
     p {
-        margin-bottom: 0.7rem;
+        margin-bottom: 1.5%;
         font-weight: 400;
         font-size: 1.1rem;
         color: $text-gray;
         width: 80%;
+        padding-left: 0;
     }
 
     strong {
@@ -100,13 +97,12 @@
 /* Estilos para el botón de la sección del landing */
 .landing-section-button {
     border: none;
-    margin-left: 6%;
-    margin-bottom: 5%;
+    margin-top: 5%;
     background-color: $button-yellow;
     /* Asegúrate de definir esta variable en tu archivo de variables */
     font-family: "Raleway", sans-serif;
     font-size: 1.2rem;
-    padding: 0.7rem;
+    padding: 1.5%;
     color: #fafafa;
     font-weight: 700;
     border-radius: 0.9rem;
@@ -125,7 +121,7 @@
 .landing-image {
     height: 100%;
     width: 100%;
-    background-image: url("../../src/assets/main-img.png");
+    background-image: url("https://i.ibb.co/2cQ5sgQ/main-img.png");
     background-size: 120%;
     background-repeat: no-repeat;
     background-position: center;
