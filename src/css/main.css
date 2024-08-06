@@ -128,8 +128,8 @@
 
 .wrapper .button {
   display: inline-block;
-  height: 55px;
-  width: 55px;
+  height: 3.4375rem;
+  width: 3.4375rem;
   margin: 0 5px;
   overflow: hidden;
   background: #fff;
@@ -148,12 +148,12 @@
 
 .wrapper .button .icon {
   display: inline-block;
-  height: 55px;
-  width: 55px;
+  height: 3.4375rem;
+  width: 3.4375rem;
   text-align: center;
   border-radius: 50px;
   box-sizing: border-box;
-  line-height: 55px;
+  line-height: 3.4375rem;
   transition: all 0.3s ease-out;
 }
 
@@ -178,8 +178,8 @@
 }
 
 .wrapper .button .icon i {
-  font-size: 25px;
-  line-height: 55px;
+  font-size: 1.5625rem;
+  line-height: 3.4375rem;
   transition: all 0.3s ease-out;
 }
 
@@ -188,10 +188,10 @@
 }
 
 .wrapper .button span {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
-  line-height: 55px;
-  margin-left: 10px;
+  line-height: 3.4375rem;
+  margin-left: 0.625rem;
   transition: all 0.3s ease-out;
 }
 
