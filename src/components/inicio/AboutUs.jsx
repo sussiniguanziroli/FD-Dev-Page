@@ -11,7 +11,7 @@ const AboutUs = ({ aboutUsRef, aboutUsRefMobile }) => {
             <main className='hiddenInDesktop' >
                 <article className='about-us-mobile' ref={aboutUsRefMobile}>
                     <div className='logo-group'>
-                        <img src="https://i.ibb.co/Dk7vj70/logo-fd.png" alt="black  logo" />
+                        <div className='logo-us'></div>
                         <h1>FÁCIL DIGITAL</h1>
                     </div>
                     <p>En Fácil Digital, nos especializamos en crear soluciones digitales innovadoras y personalizadas. </p>

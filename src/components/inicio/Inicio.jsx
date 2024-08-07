@@ -22,7 +22,11 @@ const Inicio = ({ startAnimation }) => {
     return (
         <main className='main-inicio'>
 
-            <Landing startAnimation={startAnimation} scrollToAboutUs={scrollToAboutUs} scrollToAboutUsMobile={scrollToAboutUsMobile}/>
+            <Landing 
+            startAnimation={startAnimation} 
+            scrollToAboutUs={scrollToAboutUs} 
+            scrollToAboutUsMobile={scrollToAboutUsMobile}
+            />
 
             <AboutUs aboutUsRef={aboutUsRef} aboutUsRefMobile={aboutUsRefMobile}/>
 

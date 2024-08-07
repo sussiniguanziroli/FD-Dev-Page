@@ -316,13 +316,14 @@
 .landing-mobile {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20vh;
 }
 
 .first-article-mobile {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  gap: 2rem;
+  gap: 3rem;
   height: 100%;
   margin: 2rem 1.1rem 1.1rem 1.1rem;
   padding: 1.1rem;
@@ -679,10 +680,13 @@
   align-items: center;
   justify-content: center;
 }
-.about-us-mobile .logo-group img {
-  height: 120%;
-  width: auto;
-  object-fit: contain;
+.about-us-mobile .logo-group .logo-us {
+  background-image: url("https://i.ibb.co/Dk7vj70/logo-fd.png");
+  background-size: cover;
+  height: 10rem;
+  width: 6rem;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .about-us-mobile .logo-group h1 {
   font-family: "Raleway", sans-serif;
