@@ -313,6 +313,11 @@
   background-position: center;
 }
 
+.landing-mobile {
+  display: flex;
+  flex-direction: column;
+}
+
 .first-article-mobile {
   display: flex;
   flex-direction: column;
@@ -340,36 +345,6 @@
   width: fit-content;
   background-color: #2f6735;
   text-wrap: nowrap;
-}
-
-.about-us-mobile {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  gap: 2rem;
-  margin: 2.2rem;
-}
-.about-us-mobile .logo-group {
-  display: flex;
-  height: 6rem;
-  align-items: center;
-  justify-content: center;
-}
-.about-us-mobile .logo-group img {
-  height: 100%;
-  width: auto;
-  object-fit: contain;
-}
-.about-us-mobile .logo-group h1 {
-  font-family: "Raleway", sans-serif;
-  text-wrap: nowrap;
-  font-size: 2.5rem;
-}
-.about-us-mobile p {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.3rem;
-  text-align: center;
-  padding: 1.2rem;
 }
 
 .burger-mobile {
@@ -456,17 +431,17 @@
 }
 
 .burger-bar.clicked:nth-child(1) {
-  transform: rotate(45deg) translate(0.75em, 1.25em);
+  transform: rotate(43deg) translate(0.73em, 1.23em);
   transition: ease-out 0.5s;
 }
 
 .burger-bar.clicked:nth-child(2) {
-  transform: scale(0.1);
+  transform: scale(0);
   transition: ease-out 0.5s;
 }
 
 .burger-bar.clicked:nth-child(3) {
-  transform: rotate(135deg) translate(-0.5em, 1em);
+  transform: rotate(133deg) translate(-0.47em, 0.97em);
   transition: ease-out 0.5s;
 }
 
@@ -689,6 +664,36 @@
 
 .visible {
   display: block;
+}
+
+.about-us-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 2rem;
+  margin: 2.2rem;
+}
+.about-us-mobile .logo-group {
+  display: flex;
+  height: 6rem;
+  align-items: center;
+  justify-content: center;
+}
+.about-us-mobile .logo-group img {
+  height: 120%;
+  width: auto;
+  object-fit: contain;
+}
+.about-us-mobile .logo-group h1 {
+  font-family: "Raleway", sans-serif;
+  text-wrap: nowrap;
+  font-size: 2.5rem;
+}
+.about-us-mobile p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 1.2rem;
 }
 
 @media (max-width: 1000px) {

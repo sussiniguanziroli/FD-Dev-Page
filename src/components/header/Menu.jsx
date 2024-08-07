@@ -46,12 +46,14 @@ const Menu = () => {
                     <div className={burger_class}></div>
                     <div className={burger_class}></div>
                 </div>
+                
                 <div className='burger-mobile'>
                     <div className='burger-mobile-logo'>
                         <img src="https://i.ibb.co/LYkm2bC/fd-logo.png" alt="mobile logo" />
                     </div>
                     <h2>FÁCIL DIGITAL</h2>
                 </div>
+                
             </nav>
 
             <div className={menu_class}>
