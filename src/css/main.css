@@ -350,14 +350,30 @@
 .about-us-mobile {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
+  margin: 2.2rem;
 }
 .about-us-mobile .logo-group {
   display: flex;
+  height: 6rem;
+  align-items: center;
+  justify-content: center;
 }
 .about-us-mobile .logo-group img {
   height: 100%;
-  width: 100%;
+  width: fit-content;
   object-fit: contain;
+}
+.about-us-mobile .logo-group h1 {
+  font-family: "Raleway", sans-serif;
+  text-wrap: nowrap;
+  font-size: 2.5rem;
+}
+.about-us-mobile p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 1.2rem;
 }
 
 .burger-mobile {
