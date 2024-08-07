@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Contacts from './Contacts';
 import NavBar from './NavBar';
-import Menu from './Menu';
 
 export const Header = ({ onAnimationComplete }) => {
     const [headerAnimation, setHeaderAnimation] = useState(false);
@@ -18,7 +17,7 @@ export const Header = ({ onAnimationComplete }) => {
 
     return (
         <>
-        <Menu/>
+        
         <header className={`header ${headerAnimation ? 'animated' : ''}`}>
             <div className={`header-nav ${headerAnimation ? 'fade-in' : ''}`}>
                 <img src="https://i.ibb.co/LYkm2bC/fd-logo.png" alt="logoFD" className={`${headerAnimation ? 'img-animate' : ''}`} />

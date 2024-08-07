@@ -1,5 +1,3 @@
-
-
 /* Estilos base para el landing */
 .landing-main {
     display: flex;
@@ -17,6 +15,7 @@
         opacity: 1;
         /* Se vuelve visible cuando la animación empieza */
     }
+
 }
 
 /* Estilos para la sección del landing */
@@ -26,9 +25,9 @@
     left: 4%;
     height: 80%;
     width: 70%;
-    
+
     padding: 2%;
-    
+
 }
 
 /* Estilos para el primer artículo */
@@ -40,6 +39,7 @@
     padding: 0;
     height: 100%;
     width: 120%;
+
     h1 {
         font-size: 5.2rem;
         padding-left: 0;
@@ -52,9 +52,11 @@
         font-size: 2rem;
         color: black;
     }
+
     margin-left: 3%;
-    font-family: "Poppins", sans-serif;
-    
+    font-family: "Poppins",
+    sans-serif;
+
     /* Asegúrate de definir esta variable en tu archivo de variables */
 
     p {
@@ -91,6 +93,7 @@
     transition: all 0.2s;
     transition-timing-function: ease-out;
     text-transform: uppercase;
+
     &:hover {
         color: $main-white;
         /* Asegúrate de definir esta variable en tu archivo de variables */
@@ -106,8 +109,61 @@
     background-size: 120%;
     background-repeat: no-repeat;
     background-position: center;
-    @media (max-width: 1330px) {
-        display: none;
+
+}
+
+
+//--------------ESTILOS PARA LANDING MOBILE-------------------
+
+
+.landing-mobile {
+    display: flex;
+    flex-direction: column;
+}
+
+.first-article-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2rem;
+    height: 100%;
+    margin: 2rem 1.1rem 1.1rem 1.1rem;
+    padding: 1.1rem;
+    font-family: "Raleway", sans-serif;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+
+    }
+
+    p {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.2rem;
+    }
+
+    button {
+        width: 30%;
+        background-color: $mobile-button;
     }
 }
 
+.about-us-mobile {
+    display: flex;
+    flex-direction: column;
+
+    .logo-group {
+        display: flex;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}

@@ -13,7 +13,7 @@
     width: 100%;
     z-index: 1;
     overflow: hidden; /* Asegura que el fondo no se desborde */
-    @media (max-width: 1330px) {
+    @media (max-width: 1000px) {
         display: none;
     }
 }

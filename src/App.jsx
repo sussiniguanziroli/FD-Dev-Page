@@ -8,6 +8,8 @@ import Servicios from './components/servicios/Servicios';
 import logo from './assets/fd-logo.png';
 import Compuerta from './components/Compuerta';
 import Inicio from './components/inicio/Inicio';
+import Footer from './components/Footer';
+import Menu from './components/header/Menu'
 
 
 
@@ -19,7 +21,7 @@ function App() {
         <div className='app-container'>
 
         <BrowserRouter>
-            
+            <Menu />
             <Compuerta logo={logo} onAnimationComplete={() => setCompuertaAnimationComplete(true)} />
             <Header />
             <Routes>
@@ -28,6 +30,7 @@ function App() {
                 <Route path='/contacto' element={<Contacto />} />
                 <Route path='/servicios' element={<Servicios />} />
             </Routes>
+            <Footer />
 
         </BrowserRouter >
         </div>
