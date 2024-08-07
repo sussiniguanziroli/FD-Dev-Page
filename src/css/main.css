@@ -692,6 +692,7 @@
   font-family: "Raleway", sans-serif;
   text-wrap: nowrap;
   font-size: 2.5rem;
+  text-wrap: nowrap;
 }
 .about-us-mobile p {
   font-family: "Poppins", sans-serif;
