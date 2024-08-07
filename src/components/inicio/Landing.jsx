@@ -27,23 +27,23 @@ const Landing = ({ startAnimation }) => {
         <>
             {/* Landing in Mobile */}
             <main className='landing-mobile hiddenInDesktop'>
-
-                <article className='first-article-mobile'>
-                    <h1>DISEÑO WEB</h1>
-                    <h2>Tu página web, sin estrés</h2>
-                    <p>En <strong>Fácil Digital</strong>, diseñamos y desarrollamos sitios web atractivos, creamos logos únicos y ofrecemos asesoramiento personalizado.</p>
-                    <img src="https://i.ibb.co/S57rYqG/image-inicio.png" alt="landing-mobile" />
-                    <button className='landing-section-button' onClick={scrollToAboutUs}>CONOCE MÁS</button>
-                </article>
-                <article className='about-us-mobile'>
-                    <div className='logo-group'>
-                        <img src="https://i.ibb.co/Dk7vj70/logo-fd.png" alt="black  logo" />
-                        <h1>FÁCIL DIGITAL</h1>
-                    </div>
-                    <p>En Fácil Digital, nos especializamos en crear soluciones digitales innovadoras y personalizadas. </p>
-                    <p>Estamos comprometidos con la excelencia y la satisfacción del cliente. Contáctanos y descubre cómo podemos llevar tu presencia digital al siguiente nivel.</p>
-                </article>
-
+                <div>
+                    <article className='first-article-mobile'>
+                        <h1>DISEÑO WEB</h1>
+                        <h2>Tu página web, sin estrés</h2>
+                        <p>En <strong>Fácil Digital</strong>, diseñamos y desarrollamos sitios web atractivos, creamos logos únicos y ofrecemos asesoramiento personalizado.</p>
+                        <img src="https://i.ibb.co/S57rYqG/image-inicio.png" alt="landing-mobile" />
+                        <button className='landing-section-button' onClick={scrollToAboutUs}>CONOCE MÁS</button>
+                    </article>
+                    <article className='about-us-mobile'>
+                        <div className='logo-group'>
+                            <img src="https://i.ibb.co/Dk7vj70/logo-fd.png" alt="black  logo" />
+                            <h1>FÁCIL DIGITAL</h1>
+                        </div>
+                        <p>En Fácil Digital, nos especializamos en crear soluciones digitales innovadoras y personalizadas. </p>
+                        <p>Estamos comprometidos con la excelencia y la satisfacción del cliente. Contáctanos y descubre cómo podemos llevar tu presencia digital al siguiente nivel.</p>
+                    </article>
+                </div>
             </main>
             {/* Landing in Desktop */}
             <main className={`hiddenInMobile landing-main ${landingAnimation ? 'fade-in' : ''}`}>
