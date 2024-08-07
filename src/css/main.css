@@ -670,7 +670,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  gap: 2rem;
+  gap: 1rem;
   margin: 2.2rem;
 }
 .about-us-mobile .logo-group {
@@ -694,6 +694,50 @@
   font-size: 1.3rem;
   text-align: center;
   padding: 1.2rem;
+}
+
+.about-us-desktop {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  align-items: center;
+}
+
+.about-us-img-desktop {
+  background-image: url("https://i.ibb.co/f8sP9PF/about-us-image.png");
+  width: 100%;
+  height: 40rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text-section-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text-section-right p {
+  font-family: "Poppins", sans-serif;
+  margin: 1rem;
+  padding: 0.7rem;
+  font-size: 1.2rem;
+}
+.text-section-right .logo-group {
+  display: flex;
+  height: 9rem;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 3%;
+}
+.text-section-right .logo-group img {
+  height: 120%;
+  width: auto;
+  object-fit: contain;
+}
+.text-section-right .logo-group h1 {
+  font-family: "Raleway", sans-serif;
+  text-wrap: nowrap;
+  font-size: 3rem;
 }
 
 @media (max-width: 1000px) {
