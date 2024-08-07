@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import Landing from './Landing'
 import AboutUs from './AboutUs'
+import InitialServices from './InitialServices';
 
 const Inicio = ({ startAnimation }) => {
 
@@ -29,6 +30,8 @@ const Inicio = ({ startAnimation }) => {
             />
 
             <AboutUs aboutUsRef={aboutUsRef} aboutUsRefMobile={aboutUsRefMobile}/>
+
+            <InitialServices />
 
         </main>
     )
