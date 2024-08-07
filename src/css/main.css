@@ -341,8 +341,10 @@
   font-size: 1.2rem;
 }
 .first-article-mobile button {
-  width: 30%;
+  padding: 0.8rem;
+  width: fit-content;
   background-color: #2f6735;
+  text-wrap: nowrap;
 }
 
 .about-us-mobile {

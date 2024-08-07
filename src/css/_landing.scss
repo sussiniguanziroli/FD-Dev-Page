@@ -148,8 +148,10 @@
     }
 
     button {
-        width: 30%;
+        padding: .8rem;
+        width: fit-content;
         background-color: $mobile-button;
+        text-wrap: nowrap;
     }
 }
 
