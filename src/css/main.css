@@ -870,6 +870,8 @@
   padding: 0.5rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
+  width: 100%;
+  height: auto;
 }
 .cta-mobile h1 {
   text-align: center;
@@ -890,8 +892,8 @@
 }
 
 .swiper-div {
-  width: 420px;
-  height: 200px;
+  width: 36rem;
+  height: 18rem;
   margin: 0 auto;
   border: 1px solid #2c2c2c;
   border-radius: 1.4rem;
