@@ -52,11 +52,30 @@
 .beneficios-content {
     width: 100%;
     height: 100%;
-    padding: 1rem;
     
+}
+
+.flex {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around;
+    align-items: flex-end;
+    font-family: "Poppins", sans-serif;
+    p {
+        font-size: 1.08rem;
+
+    }
+
     img {
         object-fit: contain;
-        width: 10rem;
+        width: 100%;
         height: 100%;
+        margin: 2rem;
+    }
+
+    h3 {
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        font-size: 1.5rem;
     }
 }

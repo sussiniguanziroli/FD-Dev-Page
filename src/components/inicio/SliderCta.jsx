@@ -10,14 +10,14 @@ const SliderCta = () => {
 
 
 
-    
-    function SampleNextArrow() {  
+
+    function SampleNextArrow() {
         return (
             <></>
         );
     }
 
-    function SamplePrevArrow() {  
+    function SamplePrevArrow() {
         return (
             <></>
         );
@@ -43,10 +43,12 @@ const SliderCta = () => {
             <Slider {...settings}>
 
                 {beneficios.map((beneficio) => <div key={beneficio.id} className="beneficios-content">
-                    <img src={beneficio.image} alt={beneficio.image} />
-                    <div>
-                        <h3>{beneficio.titulo}</h3>
-                        <p>{beneficio.descripcion}</p>
+                    <div className="flex">
+                        <img src={beneficio.image} alt={beneficio.image} />
+                        <div>
+                            <h3>{beneficio.titulo}</h3>
+                            <p>{beneficio.descripcion}</p>
+                        </div>
                     </div>
                 </div>)}
 
