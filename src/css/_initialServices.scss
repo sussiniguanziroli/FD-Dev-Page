@@ -3,10 +3,10 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    font-family: "Poppins" , sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 1rem;
     padding: 1rem;
-    
+
     img {
         width: 20rem;
         height: 20rem;
@@ -35,4 +35,65 @@
     h1:nth-child(7) {
         color: $naranja-diseno;
     }
+}
+
+//-----------INITIALSERVICES--DESKTOP------------------
+
+
+.initialServices-desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 4rem;
+    .diseno-web,
+    .asesoramiento,
+    .diseno-logo {
+        display: flex;
+        justify-content: space-between;
+        padding: 9rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        
+        img {
+            width: 47rem;
+            height: 47rem;
+            object-fit: contain;
+            margin-bottom: 2rem;
+            padding-bottom: 3rem;
+            
+        }
+
+        p {
+            color: $text-gray;
+            font-size: 2rem;
+            margin-top: 2rem;
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+            padding: 1rem;
+        }
+
+        h1 {
+            font-size: 3.2rem;
+            font-family: "Poppins" ,sans-serif;
+            padding-top: 10rem;
+            text-align: center;
+        }
+
+        div:nth-child(2) {
+            color: $azul-diseno;
+            p {color: $text-gray;}
+        }
+
+        .rosa {
+            color: $rosado-diseno;
+        }
+
+        .naranja {
+            color: $naranja-diseno;
+        }
+            
+            
+
+    }
+
 }

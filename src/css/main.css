@@ -795,6 +795,69 @@
   color: #f38759;
 }
 
+.initialServices-desktop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 4rem;
+}
+.initialServices-desktop .diseno-web,
+.initialServices-desktop .asesoramiento,
+.initialServices-desktop .diseno-logo {
+  display: flex;
+  justify-content: space-between;
+  padding: 9rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.initialServices-desktop .diseno-web img,
+.initialServices-desktop .asesoramiento img,
+.initialServices-desktop .diseno-logo img {
+  width: 47rem;
+  height: 47rem;
+  object-fit: contain;
+  margin-bottom: 2rem;
+  padding-bottom: 3rem;
+}
+.initialServices-desktop .diseno-web p,
+.initialServices-desktop .asesoramiento p,
+.initialServices-desktop .diseno-logo p {
+  color: #2c2c2c;
+  font-size: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem;
+}
+.initialServices-desktop .diseno-web h1,
+.initialServices-desktop .asesoramiento h1,
+.initialServices-desktop .diseno-logo h1 {
+  font-size: 3.2rem;
+  font-family: "Poppins", sans-serif;
+  padding-top: 10rem;
+  text-align: center;
+}
+.initialServices-desktop .diseno-web div:nth-child(2),
+.initialServices-desktop .asesoramiento div:nth-child(2),
+.initialServices-desktop .diseno-logo div:nth-child(2) {
+  color: #269cb6;
+}
+.initialServices-desktop .diseno-web div:nth-child(2) p,
+.initialServices-desktop .asesoramiento div:nth-child(2) p,
+.initialServices-desktop .diseno-logo div:nth-child(2) p {
+  color: #2c2c2c;
+}
+.initialServices-desktop .diseno-web .rosa,
+.initialServices-desktop .asesoramiento .rosa,
+.initialServices-desktop .diseno-logo .rosa {
+  color: #ff66c4;
+}
+.initialServices-desktop .diseno-web .naranja,
+.initialServices-desktop .asesoramiento .naranja,
+.initialServices-desktop .diseno-logo .naranja {
+  color: #f38759;
+}
+
 @media (max-width: 1000px) {
   .hiddenInMobile {
     display: none;
