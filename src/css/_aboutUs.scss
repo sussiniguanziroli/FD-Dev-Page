@@ -4,7 +4,8 @@
     justify-content: space-evenly;
     gap: 1rem;
     margin: 2.2rem;
-
+    border-bottom: 1px solid $dark-gray;
+    padding-bottom: 3rem;
     .logo-group {
         display: flex;
         height: 6rem;
@@ -90,7 +91,7 @@
         height: 9rem;
         align-items: center;
         justify-content: flex-start;
-        border: 1px solid red;
+        
         
         img {
             height: 100%;

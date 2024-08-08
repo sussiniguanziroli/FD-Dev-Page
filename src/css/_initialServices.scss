@@ -3,10 +3,36 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
+    font-family: "Poppins" , sans-serif;
+    margin: 1rem;
+    padding: 1rem;
+    
     img {
         width: 20rem;
         height: 20rem;
         object-fit: cover;
+        margin-bottom: 2rem;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        text-align: center;
+        font-size: 1.23rem;
+    }
+
+    h1:nth-child(1) {
+        color: $rosado-diseno;
+    }
+
+    h1:nth-child(4) {
+        color: $azul-diseno;
+    }
+
+    h1:nth-child(7) {
+        color: $naranja-diseno;
     }
 }
