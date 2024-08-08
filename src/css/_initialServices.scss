@@ -45,6 +45,8 @@
     flex-direction: column;
     justify-content: space-between;
     margin: 4rem;
+    margin-top: 9rem;
+    border-top: 1px solid $dark-gray;
     .diseno-web,
     .asesoramiento,
     .diseno-logo {
@@ -65,7 +67,7 @@
 
         p {
             color: $text-gray;
-            font-size: 2rem;
+            font-size: 1.7rem;
             margin-top: 2rem;
             text-align: center;
             font-family: "Poppins", sans-serif;

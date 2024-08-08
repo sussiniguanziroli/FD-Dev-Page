@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "titulo": "Diseño y Desarrollo Web",
+        "descripcion": "Creamos sitios web atractivos y funcionales, adaptados a las necesidades específicas de tu negocio. Desde páginas informativas hasta plataformas de comercio electrónico.",
+        "image": "https://i.ibb.co/w7WhtBn/beneficio-1.png"
+    },
+    {
+        "id": 2,
+        "titulo": "Soporte Técnico Constante",
+        "descripcion": "Nunca estarás solo. Nuestro equipo de soporte técnico está disponible para ayudarte en cualquier momento, asegurando que tu sitio web siempre esté en su mejor estado.",
+        "image": "https://i.ibb.co/Lh7rD5x/beneficio-2.png"
+    },
+    {
+        "id": 3,
+        "titulo": "Compromiso con el Cliente",
+        "descripcion": "Ponemos las necesidades y objetivos de nuestros clientes en el centro de todo lo que hacemos, asegurando su satisfacción y éxito.",
+        "image": "https://i.ibb.co/zhQX4CR/beneficio-3.png"
+    },
+    {
+        "id": 4,
+        "titulo": "Entrega Rápida",
+        "descripcion": "Valoramos tu tiempo. Por eso, en Fácil Digital garantizamos entregas rápidas sin comprometer la calidad. Tu proyecto estará listo para destacar en el menor tiempo posible.",
+        "image": "https://i.ibb.co/w6P5BxG/beneficio-4.png"
+    },
+    {
+        "id": 5,
+        "titulo": "Precios Competitivos",
+        "descripcion": "Ofrecemos soluciones de alta calidad a precios accesibles. En Fácil Digital, creemos que todos deberían tener acceso a un diseño web profesional sin romper el banco.",
+        "image": "https://i.ibb.co/XL8DMkZ/beneficio-5.png"
+    },
+    {
+        "id": 6,
+        "titulo": "Actualizaciones y Mantenimiento",
+        "descripcion": "Mantén tu sitio web siempre actualizado y funcionando a la perfección con nuestro servicio de mantenimiento continuo. Nos encargamos de todo para que tú puedas enfocarte en tu negocio.",
+        "image": "https://i.ibb.co/9NcssHM/beneficio-6.png"
+    }
+]

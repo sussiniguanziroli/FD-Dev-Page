@@ -712,6 +712,8 @@
   padding-left: 7rem;
   padding-bottom: 5rem;
   margin: 3rem;
+  margin-top: 0;
+  margin-bottom: 5rem;
 }
 
 .about-us-img-desktop {
@@ -800,6 +802,8 @@
   flex-direction: column;
   justify-content: space-between;
   margin: 4rem;
+  margin-top: 9rem;
+  border-top: 1px solid #474747;
 }
 .initialServices-desktop .diseno-web,
 .initialServices-desktop .asesoramiento,
@@ -823,7 +827,7 @@
 .initialServices-desktop .asesoramiento p,
 .initialServices-desktop .diseno-logo p {
   color: #2c2c2c;
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-top: 2rem;
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -856,6 +860,53 @@
 .initialServices-desktop .asesoramiento .naranja,
 .initialServices-desktop .diseno-logo .naranja {
   color: #f38759;
+}
+
+.cta-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.cta-mobile h1 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2rem;
+}
+.cta-mobile button {
+  border: 2px solid black;
+  text-transform: capitalize;
+  color: black;
+  padding: 1rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  font-size: 1.7rem;
+  margin-left: 1.4rem;
+  margin-right: 1.4rem;
+  border-radius: 1.6rem;
+}
+
+.swiper-div {
+  width: 420px;
+  height: 200px;
+  margin: 0 auto;
+  border: 1px solid #2c2c2c;
+  border-radius: 1.4rem;
+  background-color: #F5F5F5;
+}
+
+.beneficios-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.beneficios-content img {
+  object-fit: contain;
+  width: 10rem;
+  height: 100%;
 }
 
 @media (max-width: 1000px) {

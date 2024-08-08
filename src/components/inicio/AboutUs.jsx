@@ -17,11 +17,6 @@ const AboutUs = ({ aboutUsRef, aboutUsRefMobile }) => {
                 <p>En Fácil Digital, nos especializamos en crear soluciones digitales innovadoras y personalizadas. </p>
                 <p>Estamos comprometidos con la excelencia y la satisfacción del cliente. Contáctanos y descubre cómo podemos llevar tu presencia digital al siguiente nivel.</p>
             </main>
-
-
-
-
-
             {/* About us desktop */}
             <main className='hiddenInMobile about-us-desktop' ref={aboutUsRef} >
                 <section className='text-section-right' >
