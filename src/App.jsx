@@ -14,12 +14,14 @@ import Menu from './components/header/Menu'
 
 
 
+
 function App() {
     const [compuertaAnimationComplete, setCompuertaAnimationComplete] = useState(false);
 
     return (
+        
         <div className='app-container'>
-
+            
         <BrowserRouter>
             <Menu />
             <Compuerta logo={logo} onAnimationComplete={() => setCompuertaAnimationComplete(true)} />

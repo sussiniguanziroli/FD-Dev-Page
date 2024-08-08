@@ -5,7 +5,7 @@ import React, { useEffect, useState, useRef } from 'react';
 
 const Landing = ({ startAnimation, scrollToAboutUs, scrollToAboutUsMobile }) => {
     const [landingAnimation, setLandingAnimation] = useState(false);
-    
+
 
     useEffect(() => {
         if (startAnimation) {
@@ -17,22 +17,21 @@ const Landing = ({ startAnimation, scrollToAboutUs, scrollToAboutUsMobile }) => 
         }
     }, [startAnimation]);
 
-   
+
 
     return (
         <>
             {/* Landing in Mobile */}
             <main className='landing-mobile hiddenInDesktop'>
-                <div>
-                    <article className='first-article-mobile'>
-                        <h1>DISEÑO WEB</h1>
-                        <h2>Tu página web, sin estrés</h2>
-                        <p>En <strong>Fácil Digital</strong>, diseñamos y desarrollamos sitios web atractivos, creamos logos únicos y ofrecemos asesoramiento personalizado.</p>
-                        <img src="https://i.ibb.co/S57rYqG/image-inicio.png" alt="landing-mobile" />
-                        <button className='landing-section-button' onClick={scrollToAboutUsMobile}>CONOCE MÁS</button>
-                    </article>
-                    
-                </div>
+
+                <article className='first-article-mobile'>
+                    <h1>DISEÑO WEB</h1>
+                    <h2>Tu página web, sin estrés</h2>
+                    <p>En <strong>Fácil Digital</strong>, diseñamos y desarrollamos sitios web atractivos, creamos logos únicos y ofrecemos asesoramiento personalizado.</p>
+                    <img src="https://i.ibb.co/S57rYqG/image-inicio.png" alt="landing-mobile" />
+                    <button className='landing-section-button' onClick={scrollToAboutUsMobile}>CONOCE MÁS</button>
+                </article>
+
             </main>
             {/* Landing in Desktop */}
             <main className={`hiddenInMobile landing-main ${landingAnimation ? 'fade-in' : ''}`}>
