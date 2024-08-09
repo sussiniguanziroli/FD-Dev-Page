@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import FaqSection from './FaqSection';
 
 const Faqs = () => {
     const frases = [
@@ -39,14 +40,22 @@ const Faqs = () => {
                 {frases[index].texto}
             </h1>
 
-            <form className='contact-form'>
-                <h3>Contacto</h3>
-                <h4>Envíanos un mensaje</h4>
-                <input type='text' placeholder='Nombre' required />
-                <input type='email' placeholder='Email' required />
-                <textarea placeholder='Mensaje' required></textarea>
-                <button className='article-services-button landing-section-button' type='submit'>Enviar</button>
-            </form>
+            <div className='form-x-faqs'>
+                <form className='contact-form'>
+                    <h3>Contacto</h3>
+                    <h4>Envíanos un mensaje</h4>
+                    <input type='text' placeholder='Nombre' required />
+                    <input type='email' placeholder='Email' required />
+                    <textarea placeholder='Mensaje' required></textarea>
+                    <button className='article-services-button landing-section-button' type='submit'>Enviar</button>
+                </form>
+
+
+                <FaqSection />
+
+            </div>
+
+
         </section>
     );
 };
