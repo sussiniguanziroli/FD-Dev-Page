@@ -73,5 +73,79 @@
         margin-top: .5rem;
         margin-bottom: .5rem;
         font-size: 1.5rem;
+        text-align: center;
     }
+}
+
+//---------DESKTOP---------------------------
+
+.cta-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8%;
+    padding: 6%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.article-services-list-img {
+    background-image: url("https://i.ibb.co/LJP3Snh/servicios-4.png");
+    width: 100%;
+    height: 65vh;
+    background-position: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.article-services-list-items {
+    padding: 2%;
+}
+
+.article-services-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h4 {
+        font-size: 1.4rem;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 2%;
+        color: $text-gray;
+    }
+    ion-icon {
+        font-size: 32px;
+        margin-right: 3%;
+        --ionicon-stroke-width: 1.9rem;
+    }
+    font-family: "Raleway", sans-serif;
+}
+
+.article-services-title {
+    font-size: 1.8rem;
+    padding: 2%;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+}
+
+.article-services-p {
+    font-size: 1.1rem;
+    padding: 5% 2%;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    color: $text-gray;
+}
+
+.article-services-button {
+    color: $text-gray;
+    margin: 7% 0% 0%;
+    padding: 2% 6%;
+    background-color: $color-amarillo;
+    border-radius: 1.3rem;
+    font-size: 1.2rem;
+    width: 100%;
+    text-transform: capitalize;
 }

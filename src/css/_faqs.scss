@@ -1,0 +1,113 @@
+.faqs-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    margin: 2rem;
+    gap: 3rem;
+
+    h3 {
+        font-size: 1.8rem;
+        color: $text-gray;
+    }
+
+    h1 {
+        margin-top: 1.7rem;
+        font-size: 3.2rem;
+    }
+
+    .faqs-div {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        h3:nth-child(2) {
+            font-weight: 300;
+            
+        }
+    }
+
+    .contact-form {
+        margin-top: 3rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        width: 100%;
+        max-width: 40rem;
+        border: 1px solid rgb(160, 160, 160);
+        padding-top: 1rem;
+        border-radius: 1.2rem;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        input,
+        textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 1rem;
+            font-size: 1rem;
+            font-family: "Poppins", sans-serif;
+            &:focus {
+                border-color: $text-gray; 
+                box-shadow: 0 4px 8px rgba(51, 51, 51, 0.5); 
+                outline: none; 
+            }
+        }
+
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+        h4 {
+            font-size: 1.2rem;
+            color: $text-gray;
+            font-weight: 500;
+        }
+        
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.9);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateY(-5px) scale(1.05);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    40% {
+        opacity: 1;
+        transform: translateY(5px) scale(1.05);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.9);
+    }
+}
+
+.fade-in-2 {
+    animation: fadeIn 0.6s ease-in-out forwards;
+}
+
+.fade-out-2 {
+    animation: fadeOut 0.6s ease-in-out forwards;
+}

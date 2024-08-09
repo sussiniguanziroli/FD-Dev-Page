@@ -3,6 +3,7 @@ import Landing from './Landing'
 import AboutUs from './AboutUs'
 import InitialServices from './InitialServices';
 import CallToAction from './CallToAction';
+import Faqs from './Faqs';
 
 const Inicio = ({ startAnimation }) => {
 
@@ -35,6 +36,8 @@ const Inicio = ({ startAnimation }) => {
             <InitialServices />
 
             <CallToAction />
+
+            <Faqs />
 
         </main>
     )
