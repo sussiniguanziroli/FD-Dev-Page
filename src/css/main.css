@@ -814,8 +814,8 @@
 .initialServices-desktop .diseno-web img,
 .initialServices-desktop .asesoramiento img,
 .initialServices-desktop .diseno-logo img {
-  width: 100%;
-  height: 100%;
+  width: 40vw;
+  height: 40vw;
   object-fit: contain;
   margin-bottom: 2rem;
   margin-right: 3rem;
