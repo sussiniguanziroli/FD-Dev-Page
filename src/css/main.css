@@ -126,6 +126,10 @@
   align-items: center;
 }
 
+.wrapper a {
+  all: unset;
+}
+
 .wrapper .button {
   display: inline-block;
   height: 3.4375rem;
@@ -802,7 +806,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 4rem;
-  margin-top: 5rem;
+  margin-top: 0;
 }
 .initialServices-desktop .diseno-web,
 .initialServices-desktop .asesoramiento,
