@@ -3,8 +3,24 @@ import { collection, addDoc } from 'firebase/firestore';
 import FaqSection from './FaqSection';
 import { database } from '../../firebase/config';
 import Swal from 'sweetalert2';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
+
+
 
 const Faqs = () => {
+
+   
+    useEffect(() => {
+        Aos.init({
+            duration: 1000,
+            offset: 240,
+            once: true,
+            mirror: false,
+        });
+    }, []);
+
     const frases = [
         { texto: 'Diseño y Desarrollo Web', color: '#ffce2b' },
         { texto: 'Entrega Rápida', color: '#f38759' },
@@ -14,28 +30,19 @@ const Faqs = () => {
         { texto: 'Experiencia y Profesionalismo', color: '#f38759' },
     ];
 
+    const [isLoading, setIsLoading] = useState(false);
     const [index, setIndex] = useState(0);
-    const [animationClass, setAnimationClass] = useState('fade-in-2');
+    const [animationClass, setAnimationClass] = useState('animation__animate animate__bounceIn');
+    
+
+
     const [formData, setFormData] = useState({
         nombre: '',
         email: '',
         mensaje: '',
     });
-    const [isLoading, setIsLoading] = useState(false);
 
-    useEffect(() => {
-        const handleNextPhrase = () => {
-            setAnimationClass('fade-out-2');
-            setTimeout(() => {
-                setIndex((prevIndex) => (prevIndex + 1) % frases.length);
-                setAnimationClass('fade-in-2');
-            }, 500);
-        };
-
-        const interval = setInterval(handleNextPhrase, 3500);
-
-        return () => clearInterval(interval);
-    }, [frases.length]);
+   
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -73,6 +80,20 @@ const Faqs = () => {
         }
     };
 
+    useEffect(() => {
+        const handleNextPhrase = () => {
+            setAnimationClass('animation__animate animate__bounceOut');
+            setTimeout(() => {
+                setIndex((prevIndex) => (prevIndex + 1) % frases.length);
+                setAnimationClass('animation__animate animate__bounceIn');
+            }, 500);
+        };
+
+        const interval = setInterval(handleNextPhrase, 3500);
+
+        return () => clearInterval(interval);
+    }, [frases.length]);
+
     return (
         <section className='hiddenInMobile faqs-section'>
             <div className='faqs-div'>
@@ -85,7 +106,7 @@ const Faqs = () => {
                 {frases[index].texto}
             </h1>
 
-            <div className='form-x-faqs'>
+            <div data-aos="fade-up" className='form-x-faqs'>
                 <form className='contact-form' onSubmit={handleSubmit}>
                     <h3>Contacto</h3>
                     <h4>Envíanos un mensaje</h4>

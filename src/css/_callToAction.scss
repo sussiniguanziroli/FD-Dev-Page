@@ -149,4 +149,10 @@
     font-size: 1.2rem;
     width: 100%;
     text-transform: capitalize;
+    transition: all 0.5s !important;
+}
+
+.article-services-button:hover {
+    background-color: $black;
+    color: $main-white;
 }

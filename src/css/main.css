@@ -1059,6 +1059,12 @@
   font-size: 1.2rem;
   width: 100%;
   text-transform: capitalize;
+  transition: all 0.5s !important;
+}
+
+.article-services-button:hover {
+  background-color: black;
+  color: #F5F5F5;
 }
 
 .faqs-section {
@@ -1217,7 +1223,7 @@
   transition: all 0.3s ease;
 }
 .article-services-button.landing-section-button:disabled {
-  background-color: #ccc;
+  background-color: white;
   cursor: not-allowed;
 }
 .article-services-button.landing-section-button .spinner {
@@ -1244,7 +1250,10 @@
   align-items: flex-start;
   gap: 2rem;
 }
-.main-services-mobile h1, .main-services-mobile p, .main-services-mobile h2, .main-services-mobile strong {
+.main-services-mobile h1,
+.main-services-mobile p,
+.main-services-mobile h2,
+.main-services-mobile strong {
   margin-right: 5%;
   margin-left: 5%;
 }
@@ -1252,7 +1261,8 @@
   margin-top: 4%;
   font-size: 270%;
 }
-.main-services-mobile p, .main-services-mobile strong {
+.main-services-mobile p,
+.main-services-mobile strong {
   font-size: 120%;
 }
 .main-services-mobile .h1-2 {
@@ -1263,7 +1273,7 @@
   align-self: center;
 }
 
-.contacto-ahora {
+.contacto-ahora-mobile {
   align-self: center;
   margin-bottom: 5%;
 }
@@ -1306,6 +1316,85 @@
   height: 100%;
   margin: 0 auto;
   margin-bottom: 2rem;
+}
+
+.main-services-desktop {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 4%;
+  font-size: 110%;
+}
+.main-services-desktop h1,
+.main-services-desktop p,
+.main-services-desktop h2,
+.main-services-desktop strong {
+  margin-right: 7%;
+  margin-left: 7%;
+}
+.main-services-desktop h1 {
+  margin-top: 9%;
+  font-size: 270%;
+}
+.main-services-desktop p,
+.main-services-desktop strong {
+  font-size: 130%;
+}
+.main-services-desktop .h1-1 {
+  align-self: center;
+  text-align: center;
+  margin: 2%;
+}
+.main-services-desktop h2 {
+  align-self: center;
+}
+
+.desktop-slider {
+  width: 98vw;
+  height: 100%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.swiper-servicios-desktop {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  border: 1px solid #2c2c2c;
+  border-radius: 1.4rem;
+  background-color: #F5F5F5;
+}
+
+.flex-servicios-desktop {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+.flex-servicios-desktop p {
+  font-size: 130%;
+  margin: 1rem;
+}
+.flex-servicios-desktop img {
+  object-fit: contain;
+  width: 100%;
+  height: 45vh;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.flex-servicios-desktop h3 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 220%;
+  text-align: center;
+}
+
+.contacto-ahora-desktop {
+  align-self: center;
+  margin-bottom: 13%;
 }
 
 @media (max-width: 1000px) {

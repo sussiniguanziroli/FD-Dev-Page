@@ -1,10 +1,20 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { NavLink } from 'react-router-dom'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 
 const AboutUs = ({ aboutUsRef, aboutUsRefMobile }) => {
 
 
-
+    useEffect(() => {
+        Aos.init({
+            duration: 900,
+            offset: 240,
+            once: true,
+            mirror: false,
+        });
+    }, []);
 
     return (
         <>
@@ -19,7 +29,7 @@ const AboutUs = ({ aboutUsRef, aboutUsRefMobile }) => {
             </main>
             {/* About us desktop */}
             <main className='hiddenInMobile about-us-desktop' ref={aboutUsRef} >
-                <section className='text-section-right' >
+                <section data-aos="fade-right" className='text-section-right' >
                     <div className='logo-group'>
                         <img src="https://i.ibb.co/Dk7vj70/logo-fd.png" alt="black  logo" />
                         <h1>FÁCIL DIGITAL</h1>
@@ -31,7 +41,7 @@ const AboutUs = ({ aboutUsRef, aboutUsRefMobile }) => {
                     </div>
                 </section>
 
-                <img className='about-us-img-desktop' src="https://i.ibb.co/f8sP9PF/about-us-image.png" alt="aboutus image" />
+                <img data-aos="fade-left" className='about-us-img-desktop' src="https://i.ibb.co/f8sP9PF/about-us-image.png" alt="aboutus image" />
             </main>
 
         </>

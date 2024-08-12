@@ -9,6 +9,7 @@ const Inicio = ({ startAnimation }) => {
 
     const aboutUsRef = useRef(null);
     const aboutUsRefMobile = useRef(null);
+    
 
     const scrollToAboutUs = () => {
         if (aboutUsRef.current) {
