@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { collection, addDoc } from 'firebase/firestore';
 import FaqSection from './FaqSection';
 import { database } from '../../firebase/config';
-import Swal from 'sweetalert2'
-
+import Swal from 'sweetalert2';
 
 const Faqs = () => {
     const frases = [
@@ -22,6 +21,7 @@ const Faqs = () => {
         email: '',
         mensaje: '',
     });
+    const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
         const handleNextPhrase = () => {
@@ -47,6 +47,7 @@ const Faqs = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setIsLoading(true); // Empieza el estado de carga
         try {
             await addDoc(collection(database, 'mensajes'), {
                 nombre: formData.nombre,
@@ -56,12 +57,19 @@ const Faqs = () => {
             Swal.fire({
                 title: "Mensaje enviado!",
                 text: "Responderemos tu consulta lo antes posible. Muchas Gracias!",
-                icon: "success", 
+                icon: "success",
                 confirmButtonColor: '#F5B31F',
-              });
+            });
             setFormData({ nombre: '', email: '', mensaje: '' }); // Limpia el formulario
         } catch (error) {
-            console.error('Error al enviar el mensaje: ', error);
+            Swal.fire({
+                title: "Error al enviar mensaje",
+                text: "Lamentamos los inconvenientes, la base de datos se encuentra fuera de servicio. Te invitamos a escribirnos por nuestras redes sociales!. Gracias",
+                icon: "error",
+                confirmButtonColor: '#F5B31F',
+            });
+        } finally {
+            setIsLoading(false); // Finaliza el estado de carga
         }
     };
 
@@ -104,8 +112,12 @@ const Faqs = () => {
                         onChange={handleChange}
                         required
                     ></textarea>
-                    <button className='article-services-button landing-section-button' type='submit'>
-                        Enviar
+                    <button className='article-services-button landing-section-button' type='submit' disabled={isLoading}>
+                        {isLoading ? (
+                            <span className="spinner"></span> // Ícono de carga
+                        ) : (
+                            'Enviar'
+                        )}
                     </button>
                 </form>
 

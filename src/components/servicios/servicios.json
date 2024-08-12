@@ -1,0 +1,32 @@
+[
+    {
+        "id":"1",
+        "titulo":"Diseño Web",
+        "descripcion":"Transforma tu presencia online con un diseño web atractivo y funcional. Creamos sitios web personalizados que combinan estética y usabilidad. Nuestro objetivo es ofrecerte una plataforma que sea visualmente impactante y fácil de navegar.",
+        "image":"https://i.ibb.co/87w8n5W/service-1.png"
+    },
+    {
+        "id":"2",
+        "titulo":"Desarrollo Web",
+        "descripcion":"Soluciones de desarrollo web a medida para tus necesidades específicas. Desde sitios web simples hasta aplicaciones web complejas, nuestro equipo de desarrolladores construye soluciones robustas y escalables.",
+        "image":"https://i.ibb.co/fqJ2DQj/service-2.png"
+    },
+    {
+        "id":"3",
+        "titulo":"Diseño de Logo",
+        "descripcion":"Crea una identidad visual única y memorable para tu marca. Nuestro equipo de diseñadores trabaja contigo para desarrollar un logo que refleje la esencia de tu empresa.",
+        "image":"https://i.ibb.co/nkRFVcC/service-3.png"
+    },
+    {
+        "id":"4",
+        "titulo":"Diseño Movil",
+        "descripcion":"Desarrollamos aplicaciones móviles que impulsan tu negocio. En Fácil Digital, nos especializamos en el diseño y desarrollo de aplicaciones móviles intuitivas y atractivas.",
+        "image":"https://i.ibb.co/qkz8jtb/service-4.png"
+    },
+    {
+        "id":"5",
+        "titulo":"Mantenimiento Web",
+        "descripcion":"Mantén tu sitio web en perfectas condiciones con nuestro servicio de mantenimiento continuo. Nos encargamos de todas las actualizaciones, mejoras de seguridad y mantenimiento técnico necesario para que tu sitio web funcione sin problemas.",
+        "image":"https://i.ibb.co/5rB9GXH/service-5.png"
+    }
+]

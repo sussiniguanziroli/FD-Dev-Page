@@ -1,0 +1,49 @@
+.main-services-mobile {
+    font-family: "Poppins", sans-serif;
+}
+
+.swiper-div-servicios {
+    width: 98%;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid $text-gray;
+    border-radius: 1.4rem;
+    background-color: $main-white;
+
+}
+
+.flex-servicios {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+
+    p {
+        font-size: 1.08rem;
+        margin: 1rem;
+    }
+
+    img {
+        object-fit: contain;
+        width: 9rem;
+        height: 9rem;
+        margin: 2rem;
+    }
+
+    h3 {
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+.mobile-slider {
+
+    width: 98vw;
+    height: 100%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+
+}
