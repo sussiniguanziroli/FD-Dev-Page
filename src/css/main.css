@@ -232,7 +232,7 @@
   transition: opacity 1.5s ease-in;
   /* Transición suave para fade-in */
 }
-.landing-main.fade-in {
+.landing-main.fade-in-3 {
   opacity: 1;
   /* Se vuelve visible cuando la animación empieza */
 }
@@ -1173,42 +1173,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(20px) scale(0.9);
-  }
-  60% {
-    opacity: 1;
-    transform: translateY(-5px) scale(1.05);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-  40% {
-    opacity: 1;
-    transform: translateY(5px) scale(1.05);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-20px) scale(0.9);
-  }
-}
-.fade-in-2 {
-  animation: fadeIn 0.6s ease-in-out forwards;
-}
-
-.fade-out-2 {
-  animation: fadeOut 0.6s ease-in-out forwards;
-}
-
 .article-services-button.landing-section-button {
   display: flex;
   align-items: center;
@@ -1241,6 +1205,42 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+@keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.9);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-5px) scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes fadeOut2 {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(5px) scale(1.05);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.9);
+  }
+}
+.fade-in-2 {
+  animation: fadeIn2 0.6s ease-in-out forwards;
+}
+
+.fade-out-2 {
+  animation: fadeOut2 0.6s ease-in-out forwards;
 }
 
 .main-services-mobile {

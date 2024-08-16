@@ -1,6 +1,4 @@
 import React, { useEffect, useState, useRef } from 'react';
-import "animate.css"
-
 
 
 
@@ -35,7 +33,7 @@ const Landing = ({ startAnimation, scrollToAboutUs, scrollToAboutUsMobile }) => 
 
             </main>
             {/* Landing in Desktop */}
-            <main className={`hiddenInMobile landing-main ${landingAnimation ? 'fade-in' : ''}`}>
+            <main className={`hiddenInMobile landing-main ${landingAnimation ? 'fade-in-3' : ''}`}>
                 <section className='landing-section'>
                     <article className='first-article'>
                         <h2>Tu página web, sin estrés</h2>

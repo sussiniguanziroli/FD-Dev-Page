@@ -5,6 +5,7 @@ import { database } from '../../firebase/config';
 import Swal from 'sweetalert2';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import "animate.css"
 
 
 
@@ -32,7 +33,7 @@ const Faqs = () => {
 
     const [isLoading, setIsLoading] = useState(false);
     const [index, setIndex] = useState(0);
-    const [animationClass, setAnimationClass] = useState('animation__animate animate__bounceIn');
+    const [animationClass, setAnimationClass] = useState('fade-in-2');
     
 
 
@@ -82,10 +83,10 @@ const Faqs = () => {
 
     useEffect(() => {
         const handleNextPhrase = () => {
-            setAnimationClass('animation__animate animate__bounceOut');
+            setAnimationClass('fade-out-2');
             setTimeout(() => {
                 setIndex((prevIndex) => (prevIndex + 1) % frases.length);
-                setAnimationClass('animation__animate animate__bounceIn');
+                setAnimationClass('fade-in-2');
             }, 500);
         };
 
