@@ -737,7 +737,6 @@
   justify-content: space-evenly;
   gap: 1rem;
   margin: 2.2rem;
-  border-bottom: 1px solid #474747;
   padding-bottom: 3rem;
 }
 .about-us-mobile .logo-group {
@@ -1275,6 +1274,7 @@
 .main-services-mobile .h1-2 {
   align-self: center;
   text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 .main-services-mobile h2 {
   align-self: center;
@@ -1411,17 +1411,44 @@
   flex-direction: column;
   justify-content: space-around;
   gap: 2rem;
-  margin-right: 5%;
-  margin-left: 5%;
 }
 .sobreNosotros-mobile h1 {
   font-family: "Raleway", sans-serif;
   margin-top: 5%;
   font-size: 270%;
+  margin-right: 5%;
+  margin-left: 5%;
 }
-.sobreNosotros-mobile p,
-.sobreNosotros-mobile strong {
+.sobreNosotros-mobile p {
+  margin-right: 5%;
+  margin-left: 5%;
   font-size: 120%;
+}
+.sobreNosotros-mobile p strong {
+  margin: 0;
+  font-size: 105%;
+}
+.sobreNosotros-mobile strong {
+  margin-right: 5%;
+  margin-left: 5%;
+  font-size: 130%;
+}
+
+.caja-info-staff {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-evenly;
+}
+.caja-info-staff .info-staff-child {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+}
+.caja-info-staff .info-staff-child img {
+  object-fit: contain;
+  width: 15rem;
+  height: 100%;
+  border-radius: 2rem;
 }
 
 @media (max-width: 1000px) {

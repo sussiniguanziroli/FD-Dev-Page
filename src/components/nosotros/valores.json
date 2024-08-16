@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "titulo": "Creatividad e Innovación",
+      "descripcion": "Abrazamos la creatividad y la innovación para diseñar soluciones únicas y efectivas que destaquen en el mercado digital.",
+      "image": "https://i.ibb.co/KySNPgJ/valores-1.png"
+    },
+    {
+      "id": 2,
+      "titulo": "Compromiso con la Excelencia",
+      "descripcion": "Nos esforzamos por alcanzar la excelencia en cada proyecto que emprendemos, garantizando resultados de alta calidad.",
+      "image": "https://i.ibb.co/9hTvcJR/valores-2.png"
+    },
+    {
+      "id": 3,
+      "titulo": "Transparencia y Confianza",
+      "descripcion": "Construimos relaciones sólidas basadas en la transparencia, la confianza y la comunicación abierta con nuestros clientes.",
+      "image": "https://i.ibb.co/gSW8m9H/valores-3.png"
+    },
+    {
+      "id": 4,
+      "titulo": "Compromiso con el Cliente",
+      "descripcion": "Ponemos las necesidades y objetivos de nuestros clientes en el centro de todo lo que hacemos, asegurando su satisfacción y éxito.",
+      "image": "https://i.ibb.co/t2HZYt5/valores-4.png"
+    }
+  ]
+  

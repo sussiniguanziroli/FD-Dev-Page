@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Contacts from './Contacts';
 import NavBar from './NavBar';
-import { Link, NavLink } from 'react-router-dom';
+
 
 export const Header = ({ onAnimationComplete }) => {
     const [headerAnimation, setHeaderAnimation] = useState(false);
