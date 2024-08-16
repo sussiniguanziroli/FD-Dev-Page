@@ -1448,7 +1448,22 @@
   object-fit: contain;
   width: 15rem;
   height: 100%;
-  border-radius: 2rem;
+}
+
+.staff-photo:hover {
+  transform: translateY(-5px);
+  /* Efecto de elevación en hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 15px 25px rgba(0, 0, 0, 0.15);
+  /* Sombra más intensa en hover */
+}
+
+.staff-photo {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 15px rgba(0, 0, 0, 0.1);
+  /* Sombra más lejana con mayor desenfoque */
+  border-radius: 14px;
+  /* Redondeo de las esquinas para un toque más suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Transición suave para hover */
 }
 
 @media (max-width: 1000px) {

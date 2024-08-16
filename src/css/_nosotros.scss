@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: space-around;
     gap: 2rem;
+
     h1 {
         font-family: "Raleway", sans-serif;
         margin-top: 5%;
@@ -17,6 +18,7 @@
         margin-right: 5%;
         margin-left: 5%;
         font-size: 120%;
+
         strong {
             margin: 0;
             font-size: 105%;
@@ -29,20 +31,48 @@
         font-size: 130%;
     }
 }
+
 .caja-info-staff {
     border: 1px solid red;
     display: flex;
     justify-content: space-evenly;
+
     .info-staff-child {
         border: 1px solid green;
         display: flex;
         flex-direction: column;
+
         img {
             object-fit: contain;
             width: 15rem;
             height: 100%;
-            border-radius: 2rem;
+
+            
+
         }
+
+
     }
+
+}
+
+.staff-photo:hover {
+    transform: translateY(-5px);
+    /* Efecto de elevación en hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2),
+        0 15px 25px rgba(0, 0, 0, 0.15);
+    /* Sombra más intensa en hover */
+}
+
+.staff-photo {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+        /* Sombra más cercana con menor desenfoque */
+        0 8px 15px rgba(0, 0, 0, 0.1);
+    /* Sombra más lejana con mayor desenfoque */
+    border-radius: 14px;
+    /* Redondeo de las esquinas para un toque más suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Transición suave para hover */
+
     
 }
