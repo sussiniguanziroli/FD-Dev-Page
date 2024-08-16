@@ -20,12 +20,12 @@ const AboutUs = ({ aboutUsRef, aboutUsRefMobile }) => {
         <>
             {/* About us mobile */}
             <main className='hiddenInDesktop about-us-mobile' ref={aboutUsRefMobile}>
-                <div className='logo-group'>
+                <div data-aos="fade-up" className='logo-group'>
                     <div className='logo-us'></div>
                     <h1>FÁCIL DIGITAL</h1>
                 </div>
-                <p>En Fácil Digital, nos especializamos en crear soluciones digitales innovadoras y personalizadas. </p>
-                <p>Estamos comprometidos con la excelencia y la satisfacción del cliente. Contáctanos y descubre cómo podemos llevar tu presencia digital al siguiente nivel.</p>
+                <p data-aos="fade-up" >En Fácil Digital, nos especializamos en crear soluciones digitales innovadoras y personalizadas. </p>
+                <p data-aos="fade-up">Estamos comprometidos con la excelencia y la satisfacción del cliente. Contáctanos y descubre cómo podemos llevar tu presencia digital al siguiente nivel.</p>
             </main>
             {/* About us desktop */}
             <main className='hiddenInMobile about-us-desktop' ref={aboutUsRef} >

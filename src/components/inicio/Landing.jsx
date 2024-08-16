@@ -21,7 +21,7 @@ const Landing = ({ startAnimation, scrollToAboutUs, scrollToAboutUsMobile }) => 
     return (
         <>
             {/* Landing in Mobile */}
-            <main className='landing-mobile hiddenInDesktop'>
+            <main className={`hiddenInDesktop landing-mobile ${landingAnimation ? 'fade-in-3' : ''}`}>
 
                 <article className='first-article-mobile'>
                     <h1>DISEÑO WEB</h1>

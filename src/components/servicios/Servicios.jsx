@@ -15,7 +15,6 @@ const Servicios = () => {
 
                 <div className='mobile-slider'>
                     <ServiciosSlider />
-                    <p>falta ver la cantidad de texto de este slider</p>
                 </div>
 
                 <h2>¿Listo para empezar?</h2>

@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import servicios from "./servicios.json"
-import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
+import serviciosMobile from "./servicios-mobile.json"
 
 const ServiciosSlider = () => {
 
@@ -111,7 +111,7 @@ const ServiciosSlider = () => {
             <div className="swiper-div-servicios hiddenInDesktop" >
                 <Slider {...settings}>
 
-                    {servicios.map((servicio) => <div key={servicio.id} className="servicios-content">
+                    {serviciosMobile.map((servicio) => <div key={servicio.id} className="servicios-content">
                         <div className="flex-servicios">
                             <img src={servicio.image} alt={servicio.servicio} />
                             <div>

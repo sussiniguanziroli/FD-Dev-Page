@@ -118,6 +118,13 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 20vh;
+    opacity: 0;
+    /* Inicialmente invisible */
+    transition: opacity 1.3s ease-in;
+
+    &.fade-in-3 {
+        opacity: 1;
+    }
 }
 
 .first-article-mobile {

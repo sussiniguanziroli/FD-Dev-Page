@@ -20,7 +20,7 @@ const CallToAction = () => {
     return (
         <>
             {/* MOBILE DESIGN */}
-            <main data-aos="fade-up" className='hiddenInDesktop cta-mobile'>
+            <main data-aos="fade-in" className='hiddenInDesktop cta-mobile'>
                 <h1>Obtené el control total de tu sitio web</h1>
                 <section className='slider-section'>
                     <SliderCta />

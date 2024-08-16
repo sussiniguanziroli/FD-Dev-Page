@@ -1,0 +1,21 @@
+.sobreNosotros-mobile {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-right: 5%;
+    margin-left: 5%;
+
+
+    h1 {
+        font-family: "Raleway", sans-serif;
+        margin-top: 5%;
+        font-size: 270%;
+    }
+
+    p,
+    strong {
+        font-size: 120%;
+    }
+}
