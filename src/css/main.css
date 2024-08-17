@@ -1419,6 +1419,14 @@
   margin-right: 5%;
   margin-left: 5%;
 }
+.sobreNosotros-mobile h2 {
+  align-self: center;
+  font-size: 140%;
+  border-radius: 2rem;
+  background-color: #0F53E9;
+  padding: 0.7rem;
+  color: #F5F5F5;
+}
 .sobreNosotros-mobile p {
   margin-right: 5%;
   margin-left: 5%;
@@ -1435,12 +1443,10 @@
 }
 
 .caja-info-staff {
-  border: 1px solid red;
   display: flex;
   justify-content: space-evenly;
 }
 .caja-info-staff .info-staff-child {
-  border: 1px solid green;
   display: flex;
   flex-direction: column;
 }
@@ -1458,6 +1464,76 @@
 }
 
 .staff-photo {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 15px rgba(0, 0, 0, 0.1);
+  /* Sombra más lejana con mayor desenfoque */
+  border-radius: 14px;
+  /* Redondeo de las esquinas para un toque más suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Transición suave para hover */
+}
+
+.sobreNosotros-desktop {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2rem;
+}
+.sobreNosotros-desktop h1 {
+  font-family: "Raleway", sans-serif;
+  margin-top: 1%;
+  font-size: 300%;
+  margin-right: 7%;
+  margin-left: 7%;
+}
+.sobreNosotros-desktop h2 {
+  align-self: center;
+  font-size: 250%;
+  border-radius: 2rem;
+  background-color: #0F53E9;
+  padding: 1rem;
+  color: #F5F5F5;
+}
+.sobreNosotros-desktop p {
+  margin-right: 7%;
+  margin-left: 7%;
+  font-size: 130%;
+}
+.sobreNosotros-desktop p strong {
+  margin: 0;
+  font-size: 105%;
+}
+.sobreNosotros-desktop strong {
+  margin-right: 7%;
+  margin-left: 7%;
+  font-size: 140%;
+  margin-bottom: 1.5%;
+}
+
+.caja-info-staff-desktop {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+.caja-info-staff-desktop .info-staff-child {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.caja-info-staff-desktop .info-staff-child img {
+  object-fit: contain;
+  width: 27rem;
+  height: 100%;
+}
+
+.staff-photo-desktop:hover {
+  transform: translateY(-5px);
+  /* Efecto de elevación en hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 15px 25px rgba(0, 0, 0, 0.15);
+  /* Sombra más intensa en hover */
+}
+
+.staff-photo-desktop {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 15px rgba(0, 0, 0, 0.1);
   /* Sombra más lejana con mayor desenfoque */
   border-radius: 14px;
