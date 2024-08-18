@@ -10,19 +10,19 @@ const Contacto = () => {
         <strong>Ponte en contacto con nosotros a través de los siguientes medios:</strong>
         <h2>Información de Contacto</h2>
         <div className='contact-data'>
-          <img src="../public/icon-whatsapp.svg" alt="whatsapp" />
+          <img src="public/icon-whatsapp.svg" alt="whatsapp" />
           <strong>+54 3794-606980</strong>
         </div>
         <div className='contact-data'>
-          <img src="../public/icon-instagram.svg" alt="instagram" />
+          <img src="public/icon-instagram.svg" alt="instagram" />
           <strong>facildigital_arg</strong>
         </div>
         <div className='contact-data'>
-          <img src="../public/icon-facebook.svg" alt="facebook" />
+          <img src="public/icon-facebook.svg" alt="facebook" />
           <strong>Fácil Digital</strong>
         </div>
         <div className='contact-data'>
-          <img src="../public/icon-mail.svg" alt="mail" />
+          <img src="public/icon-mail.svg" alt="mail" />
           <strong>facildigitalcontacto@gmail.com</strong>
         </div>
         <div>
