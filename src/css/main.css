@@ -1311,10 +1311,11 @@
   margin: 2rem;
 }
 .flex-servicios h3 {
+  margin-left: 0.8rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
-  text-align: center;
+  text-align: start;
 }
 
 .mobile-slider {
@@ -1384,6 +1385,7 @@
 .flex-servicios-desktop p {
   font-size: 130%;
   margin: 1rem;
+  text-align: start;
 }
 .flex-servicios-desktop img {
   object-fit: contain;
@@ -1393,10 +1395,11 @@
   margin-bottom: 2rem;
 }
 .flex-servicios-desktop h3 {
+  margin-left: 0.8rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
   font-size: 220%;
-  text-align: center;
+  text-align: start;
 }
 
 .contacto-ahora-desktop {
@@ -1422,9 +1425,9 @@
   align-self: center;
   font-size: 140%;
   border-radius: 2rem;
-  background-color: #0F53E9;
+  background-color: #7098ee;
   padding: 0.7rem;
-  color: #F5F5F5;
+  color: black;
 }
 .sobreNosotros-mobile p {
   margin-right: 5%;
@@ -1489,9 +1492,9 @@
   align-self: center;
   font-size: 200%;
   border-radius: 2rem;
-  background-color: #0F53E9;
+  background-color: #7098ee;
   padding: 1rem;
-  color: #F5F5F5;
+  color: black;
 }
 .sobreNosotros-desktop p {
   margin-right: 7%;
@@ -1643,7 +1646,7 @@
   font-size: 130%;
 }
 .main-contacto-desktop .main-contacto-prev h2 {
-  margin-bottom: 2%;
+  margin-bottom: 3%;
 }
 .main-contacto-desktop .main-contacto-prev strong {
   color: black;
@@ -1654,7 +1657,7 @@
   height: 100%;
   display: flex;
   align-items: center;
-  margin-bottom: 1%;
+  margin-bottom: 2%;
   gap: 2rem;
 }
 .main-contacto-desktop .main-contacto-prev .contact-data img {
