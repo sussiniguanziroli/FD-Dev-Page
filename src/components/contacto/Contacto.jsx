@@ -113,7 +113,7 @@ const Contacto = () => {
                             {isLoading ? (
                                 <span className="spinner"></span> // Ícono de carga
                             ) : (
-                                'Enviar'
+                                'ENVIAR'
                             )}
                         </button>
                     </form>
@@ -184,9 +184,11 @@ const Contacto = () => {
                         </button>
                     </form>
 
+                    <FaqSection />
+
                 </section>
 
-
+                
 
             </main>
         </>

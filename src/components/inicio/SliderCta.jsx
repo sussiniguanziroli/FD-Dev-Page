@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import beneficios from './beneficios.json'
+import beneficiosMobile from './beneficios-mobile.json'
 
 
 
@@ -39,22 +40,40 @@ const SliderCta = () => {
     };
 
     return (
-        <div className="swiper-div" >
-            <Slider {...settings}>
+        <>
+            <div className="swiper-div hiddenInMobile" >
+                <Slider {...settings}>
 
-                {beneficios.map((beneficio) => <div key={beneficio.id} className="beneficios-content">
-                    <div className="flex">
-                        <img src={beneficio.image} alt={beneficio.image} />
-                        <div>
-                            <h3>{beneficio.titulo}</h3>
-                            <p>{beneficio.descripcion}</p>
+                    {beneficios.map((beneficio) => <div key={beneficio.id} className="beneficios-content">
+                        <div className="flex">
+                            <img src={beneficio.image} alt={beneficio.image} />
+                            <div>
+                                <h3>{beneficio.titulo}</h3>
+                                <p>{beneficio.descripcion}</p>
+                            </div>
                         </div>
-                    </div>
-                </div>)}
+                    </div>)}
 
 
-            </Slider>
-        </div>
+                </Slider>
+            </div>
+            <div className="swiper-div hiddenInDesktop" >
+                <Slider {...settings}>
+
+                    {beneficiosMobile.map((beneficio) => <div key={beneficio.id} className="beneficios-content">
+                        <div className="flex">
+                            <img src={beneficio.image} alt={beneficio.image} />
+                            <div>
+                                <h3>{beneficio.titulo}</h3>
+                                <p>{beneficio.descripcion}</p>
+                            </div>
+                        </div>
+                    </div>)}
+
+
+                </Slider>
+            </div>
+        </>
     )
 }
 
