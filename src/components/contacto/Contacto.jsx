@@ -122,7 +122,71 @@ const Contacto = () => {
                 </div>
             </main>
             {/* DESKTOP */}
-            <main className='hiddenInMobile'>
+            <main className='animate__animated animate__fadeIn  hiddenInMobile main-contacto-desktop'>
+                <div className='main-contacto-prev'>
+                    <h1>Contacto</h1>
+                    <p><strong>Estamos aquí para ayudarte!</strong> En Fácil Digital, nos encanta escuchar tus ideas y trabajar juntos para llevar tu negocio al siguiente nivel.</p>
+                    <strong>Ponte en contacto con nosotros a través de los siguientes medios:</strong>
+                    <h2>Información de Contacto:</h2>
+                    <div className='contact-data'>
+                        <img src={iconWhatsapp} alt="whatsapp" />
+
+                        <strong>+54 3794-606980</strong>
+                    </div>
+                    <div className='contact-data'>
+                        <img src={iconInstagram} alt="instagram" />
+                        <strong>facildigital_arg</strong>
+                    </div>
+                    <div className='contact-data'>
+                        <img src={iconFacebook} alt="facebook" />
+                        <strong>Fácil Digital</strong>
+                    </div>
+                    <div className='contact-data'>
+                        <img src={iconMail} alt="mail" />
+                        <strong>facildigitalcontacto@gmail.com</strong>
+                    </div>
+                </div>
+
+
+                <section className='form-section'>
+                    <form className='contact-form' onSubmit={handleSubmit}>
+                        <h3>Contactanos</h3>
+                        <h4>Envíanos un mensaje</h4>
+                        <input
+                            type='text'
+                            name='nombre'
+                            placeholder='Nombre'
+                            value={formData.nombre}
+                            onChange={handleChange}
+                            required
+                        />
+                        <input
+                            type='email'
+                            name='email'
+                            placeholder='Email'
+                            value={formData.email}
+                            onChange={handleChange}
+                            required
+                        />
+                        <textarea
+                            name='mensaje'
+                            placeholder='Mensaje'
+                            value={formData.mensaje}
+                            onChange={handleChange}
+                            required
+                        ></textarea>
+                        <button className='article-services-button landing-section-button' type='submit' disabled={isLoading}>
+                            {isLoading ? (
+                                <span className="spinner"></span> // Ícono de carga
+                            ) : (
+                                'Enviar'
+                            )}
+                        </button>
+                    </form>
+
+                </section>
+
+
 
             </main>
         </>

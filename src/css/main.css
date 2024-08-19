@@ -1139,39 +1139,37 @@
   color: #2c2c2c;
   font-weight: 500;
 }
-
-.form-x-faqs {
+.faqs-section .form-x-faqs {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 5rem;
 }
 @media (max-width: 1212px) {
-  .form-x-faqs {
+  .faqs-section .form-x-faqs {
     flex-direction: column;
   }
 }
-
-.faq-section {
+.faqs-section .faq-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "Poppins", sans-serif;
 }
-.faq-section h3 {
+.faqs-section .faq-section h3 {
   margin-bottom: 1rem;
   font-size: 1.7rem;
 }
 @media (max-width: 1212px) {
-  .faq-section {
+  .faqs-section .faq-section {
     flex-direction: column;
     display: block;
   }
-  .faq-section h3 {
+  .faqs-section .faq-section h3 {
     text-align: center;
   }
 }
-.faq-section .typography {
+.faqs-section .faq-section .typography {
   font-family: "Poppins", sans-serif;
 }
 
@@ -1489,7 +1487,7 @@
 }
 .sobreNosotros-desktop h2 {
   align-self: center;
-  font-size: 250%;
+  font-size: 200%;
   border-radius: 2rem;
   background-color: #0F53E9;
   padding: 1rem;
@@ -1557,7 +1555,8 @@
   font-size: 270%;
   font-family: "Raleway", sans-serif;
 }
-.main-contacto-mobile p, .main-contacto-mobile strong {
+.main-contacto-mobile p,
+.main-contacto-mobile strong {
   font-size: 120%;
 }
 .main-contacto-mobile .contact-data {
@@ -1613,6 +1612,100 @@
 .main-contacto-mobile .contact-form button {
   font-weight: 600 !important;
   font-size: 1.2rem;
+}
+
+.main-contacto-desktop {
+  font-family: "Poppins", sans-serif;
+  margin-left: 7%;
+  margin-right: 7%;
+  height: 100%;
+}
+.main-contacto-desktop .main-contacto-prev {
+  justify-content: space-around;
+  gap: 4%;
+  display: flex;
+  flex-direction: column;
+  min-width: 30rem;
+}
+.main-contacto-desktop .main-contacto-prev h1 {
+  margin-bottom: 2%;
+  margin-top: 1.5%;
+  font-size: 280%;
+  font-family: "Raleway", sans-serif;
+}
+.main-contacto-desktop .main-contacto-prev p {
+  margin-bottom: 2%;
+  color: #2c2c2c;
+}
+.main-contacto-desktop .main-contacto-prev p,
+.main-contacto-desktop .main-contacto-prev strong {
+  margin-bottom: 2%;
+  font-size: 130%;
+}
+.main-contacto-desktop .main-contacto-prev h2 {
+  margin-bottom: 2%;
+}
+.main-contacto-desktop .main-contacto-prev strong {
+  color: black;
+  font-size: 110%;
+}
+.main-contacto-desktop .main-contacto-prev .contact-data {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1%;
+  gap: 2rem;
+}
+.main-contacto-desktop .main-contacto-prev .contact-data img {
+  width: 3rem;
+  height: 100%;
+}
+.main-contacto-desktop .form-section {
+  display: flex;
+  justify-content: center;
+}
+.main-contacto-desktop .form-section .contact-form {
+  margin-top: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 38rem;
+  border: 1px solid rgb(160, 160, 160);
+  padding-top: 1rem;
+  border-radius: 1.2rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+.main-contacto-desktop .form-section .contact-form input,
+.main-contacto-desktop .form-section .contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+.main-contacto-desktop .form-section .contact-form input:focus,
+.main-contacto-desktop .form-section .contact-form textarea:focus {
+  border-color: #2c2c2c;
+  box-shadow: 0 4px 8px rgba(51, 51, 51, 0.5);
+  outline: none;
+}
+.main-contacto-desktop .form-section .contact-form textarea {
+  resize: none;
+  height: 100px;
+}
+.main-contacto-desktop .form-section .contact-form h3 {
+  font-size: 1.5rem;
+}
+.main-contacto-desktop .form-section .contact-form h4 {
+  font-size: 1.2rem;
+  color: #2c2c2c;
+  font-weight: 500;
 }
 
 @media (max-width: 1000px) {

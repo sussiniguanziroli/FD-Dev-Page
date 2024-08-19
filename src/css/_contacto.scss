@@ -10,9 +10,11 @@
     h1 {
         margin-top: 5%;
         font-size: 270%;
-        font-family: "Raleway",sans-serif;
+        font-family: "Raleway", sans-serif;
     }
-    p, strong {
+
+    p,
+    strong {
         font-size: 120%;
     }
 
@@ -22,6 +24,7 @@
         display: flex;
         align-items: center;
         gap: 2rem;
+
         img {
             width: 3rem;
             height: 100%;
@@ -41,6 +44,7 @@
         padding-top: 1rem;
         border-radius: 1.2rem;
         padding: 1rem;
+
         input,
         textarea {
             width: 100%;
@@ -49,17 +53,18 @@
             border-radius: 1rem;
             font-size: 1.4rem;
             font-family: "Poppins", sans-serif;
+
             &:focus {
-                border-color: $text-gray; 
-                box-shadow: 0 4px 8px rgba(51, 51, 51, 0.5); 
-                outline: none; 
+                border-color: $text-gray;
+                box-shadow: 0 4px 8px rgba(51, 51, 51, 0.5);
+                outline: none;
             }
         }
 
         textarea {
             resize: none;
             height: 100px;
-            
+
         }
 
         h3 {
@@ -77,10 +82,124 @@
             font-weight: 600 !important;
             font-size: 1.2rem;
         }
-        
+
     }
 
 }
 
 //---------------CONTACTO DESKTOP--------------------
 
+
+.main-contacto-desktop {
+    font-family: "Poppins", sans-serif;
+    margin-left: 7%;
+    margin-right: 7%;
+    height: 100%;
+
+    
+    .main-contacto-prev {
+        justify-content: space-around;
+        gap: 4%;
+        display: flex;
+        flex-direction: column;
+        min-width: 30rem;
+        h1 {
+            margin-bottom: 2%;
+            margin-top: 1.5%;
+            font-size: 280%;
+            font-family: "Raleway", sans-serif;
+        }
+
+        p {
+            margin-bottom: 2%;
+            color: $text-gray;
+        }
+    
+        p,
+        strong {
+            margin-bottom: 2%;
+            font-size: 130%;
+        }
+
+        h2 {
+            margin-bottom: 2%;
+        }
+
+        strong {
+            color: $black;
+            font-size: 110%;
+        }
+    
+        .contact-data {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 1%;
+            gap: 2rem;
+    
+            img {
+                width: 3rem;
+                height: 100%;
+            }
+        }
+    }
+
+    //-----------a otro tema----------
+    .form-section {
+        display: flex;
+        justify-content: center;
+        .contact-form {
+            margin-top: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            width: 100%;
+            max-width: 38rem;
+            border: 1px solid rgb(160, 160, 160);
+            padding-top: 1rem;
+            border-radius: 1.2rem;
+            padding: 1rem;
+            margin-bottom: 2rem;
+    
+            input,
+            textarea {
+                width: 100%;
+                padding: 0.8rem;
+                border: 1px solid #ccc;
+                border-radius: 1rem;
+                font-size: 1rem;
+                font-family: "Poppins", sans-serif;
+    
+                &:focus {
+                    border-color: $text-gray;
+                    box-shadow: 0 4px 8px rgba(51, 51, 51, 0.5);
+                    outline: none;
+                }
+            }
+    
+            textarea {
+                resize: none;
+                height: 100px;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
+    
+            h4 {
+                font-size: 1.2rem;
+                color: $text-gray;
+                font-weight: 500;
+            }
+    
+        }
+    
+    }
+
+    
+
+
+}
