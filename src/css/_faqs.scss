@@ -123,7 +123,7 @@
     transition: all 0.3s ease;
 
     &:disabled {
-        background-color: white;
+        background-color: $text-gray;
         cursor: not-allowed;
     }
 
