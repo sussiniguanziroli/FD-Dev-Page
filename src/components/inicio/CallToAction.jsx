@@ -2,10 +2,18 @@ import React, { useEffect } from 'react'
 import SliderCta from './SliderCta'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import { Navigate, useNavigate } from 'react-router-dom';
+
 
 
 
 const CallToAction = () => {
+
+    const navegarContacto = useNavigate();
+
+    const handleButtonClick = () => {
+        navegarContacto("/contacto");
+    }
 
     useEffect(() => {
         Aos.init({
@@ -25,7 +33,7 @@ const CallToAction = () => {
                 <section className='slider-section'>
                     <SliderCta />
                 </section>
-                <button className='landing-section-button'>Quiero mi Sitio Web</button>
+                <button onClick={handleButtonClick} className='landing-section-button'>Quiero mi Sitio Web</button>
             </main>
             {/* DESKTOP DESIGN */}
             <main className='hiddenInMobile cta-desktop'>
@@ -46,7 +54,8 @@ const CallToAction = () => {
                         <h4><ion-icon name="checkmark-circle-outline"></ion-icon> Asesoramiento personalizado</h4>
                         <h4><ion-icon name="checkmark-circle-outline"></ion-icon> Seguimiento de procesos</h4>
                     </div>
-                    <button className='article-services-button landing-section-button'>Quiero mi sitio web</button>
+                    <button onClick={handleButtonClick} className='article-services-button landing-section-button'>Quiero mi sitio web</button>
+                    
                 </section>
                 <div data-aos="fade-left" className='article-services-list-img'></div>
 
