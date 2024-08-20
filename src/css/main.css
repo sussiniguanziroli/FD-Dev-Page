@@ -1578,7 +1578,10 @@
   height: 100%;
 }
 .main-contacto-mobile .form-x-faqs {
+  display: flex;
+  flex-direction: column;
   align-self: center;
+  align-items: center;
   width: 95%;
 }
 .main-contacto-mobile .contact-form {
