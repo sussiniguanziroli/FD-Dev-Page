@@ -1,0 +1,26 @@
+.not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;   
+    height: 100%;
+    h1 {
+        margin-bottom: 3rem;
+    }
+    strong {
+        font-size: 1.2rem;
+    }
+    .navbar-not-found {
+        background-color: $black;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: row;
+        margin: 3rem;
+        padding: 2rem;
+        .nav-button {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+    }
+}

@@ -142,8 +142,10 @@ const Faqs = () => {
                         )}
                     </button>
                 </form>
-
+                <div className='faq-contacts'>
                 <FaqSection />
+                </div>
+                
             </div>
         </section>
     );

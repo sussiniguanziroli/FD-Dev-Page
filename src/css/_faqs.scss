@@ -81,36 +81,43 @@
         gap: 5rem;
         margin-left: 4rem;
         margin-right: 2rem;
-        @media (max-width:1212px) {
-            flex-direction: column;
-        }
-    }
-
-    .faq-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-family: "Poppins", sans-serif;
-        margin-left: 2rem;
-        margin-right: 2rem;
-        h3 {
-            margin-bottom: 1rem;
-            font-size: 1.7rem;
-        }
 
         @media (max-width:1212px) {
             flex-direction: column;
-            display: block;
+        }
 
-            h3 {
-                text-align: center;
+        .faq-contacts {
+            width: 65rem;
+            font-size: 1.3rem;
+
+            .faq-section {
+                margin-bottom: 1rem;
+                margin-left: 2rem;
+                margin-right: 2rem;
+
+                h3 {
+                    margin-bottom: 1rem;
+                    font-size: 1.7rem;
+                }
+
+                .typography {
+                    font-size: 1.1rem;
+                    font-family: "Poppins", sans-serif;
+                }
+
+                @media (max-width:1212px) {
+                    flex-direction: column;
+                    display: block;
+
+                    h3 {
+                        text-align: center;
+                    }
+                }
             }
         }
-
-        .typography {
-            font-family: "Poppins", sans-serif;
-        }
     }
+
+
 }
 
 

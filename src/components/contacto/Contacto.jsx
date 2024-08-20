@@ -184,11 +184,12 @@ const Contacto = () => {
                         </button>
                     </form>
 
-                    <FaqSection />
+                    <div className='faq-contacts'>
+                        <FaqSection />
+                    </div>
 
                 </section>
 
-                
 
             </main>
         </>

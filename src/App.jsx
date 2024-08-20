@@ -10,6 +10,7 @@ import Compuerta from './components/Compuerta';
 import Inicio from './components/inicio/Inicio';
 import Footer from './components/Footer';
 import Menu from './components/header/Menu'
+import NotFound from './components/NotFound';
 
 
 
@@ -28,6 +29,7 @@ function App() {
             <Header />
             <Routes>
                 <Route path='/' element={<Inicio startAnimation={compuertaAnimationComplete} />} />
+                <Route path='*' element={<NotFound />} />
                 <Route path='/nosotros' element={<Nosotros />} />
                 <Route path='/contacto' element={<Contacto />} />
                 <Route path='/servicios' element={<Servicios />} />
