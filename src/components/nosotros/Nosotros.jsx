@@ -49,15 +49,15 @@ const Nosotros = () => {
 
                         <img className='staff-photo-desktop' src="https://placehold.co/500x600" alt="munie 1" />
 
-                        <h4>info muñeco 1</h4>
-                        <h5>laburo q hace nada</h5>
+                        <h4>Patricio Sussini Guanziroli</h4>
+                        <h5>Programador Frontend</h5>
                     </div>
                     <div className='info-staff-child'>
 
                         <img className='staff-photo-desktop' src="https://placehold.co/500x600" alt="munie 2" />
 
-                        <h4>info muñeco 2</h4>
-                        <h5>laburo q hace todo</h5>
+                        <h4>Franco Barrios Roch</h4>
+                        <h5>Diseñador gráfico y de UX/UI</h5>
                     </div>
                 </div>
             </main>
