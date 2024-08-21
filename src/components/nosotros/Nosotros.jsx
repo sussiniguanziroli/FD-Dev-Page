@@ -14,21 +14,20 @@ const Nosotros = () => {
                 <div className='mobile-slider'>
                     <NosotrosSlider />
                 </div>
-                <h2>Nosotros: Fácil Digital</h2>
                 <div className='caja-info-staff'>
                     <div className='info-staff-child'>
 
                         <img className='staff-photo' src="https://placehold.co/500x600" alt="munie 1" />
 
-                        <h4>info muñeco 1</h4>
-                        <h5>laburo q hace nada</h5>
+                        <h4>Patricio Sussini Guanziroli</h4>
+                        <h5>Programador Frontend</h5>
                     </div>
                     <div className='info-staff-child'>
 
                         <img className='staff-photo' src="https://placehold.co/500x600" alt="munie 2" />
 
-                        <h4>info muñeco 2</h4>
-                        <h5>laburo q hace todo</h5>
+                        <h4>Franco Barrios Roch</h4>
+                        <h5>Diseñador UX/UI</h5>
                     </div>
                 </div>
             </main>
@@ -43,7 +42,7 @@ const Nosotros = () => {
                 <div className='mobile-slider'>
                     <NosotrosSlider />
                 </div>
-                <h2>Nosotros: Fácil Digital</h2>
+                
                 <div className='caja-info-staff-desktop'>
                     <div className='info-staff-child'>
 
