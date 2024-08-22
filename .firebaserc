@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "facil-digital-3d08f"
+  },
+  "targets": {},
+  "etags": {
+    "facil-digital-3d08f": {
+      "extensionInstances": {
+        "firestore-send-email": "812504f64ddc14670c26b7f09387182f3606c705beb56347268a4abb3473f888"
+      }
+    }
+  },
+  "dataconnectEmulatorConfig": {}
+}

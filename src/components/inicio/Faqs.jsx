@@ -6,7 +6,7 @@ import Swal from 'sweetalert2';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import "animate.css"
-
+import { handleNewMessage } from '../../utlils/mailsHandler';
 
 
 
@@ -62,6 +62,7 @@ const Faqs = () => {
                 email: formData.email,
                 mensaje: formData.mensaje,
             });
+            await handleNewMessage (formData.nombre, formData.email); 
             Swal.fire({
                 title: "Mensaje enviado!",
                 text: "Responderemos tu consulta lo antes posible. Muchas Gracias!",
