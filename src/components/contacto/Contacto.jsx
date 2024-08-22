@@ -7,6 +7,7 @@ import { database } from '../../firebase/config';
 import { collection, addDoc } from 'firebase/firestore';
 import FaqSection from '../inicio/FaqSection'
 import Swal from 'sweetalert2';
+import { handleNewMessage } from '../../utlils/mailsHandler';
 
 
 const Contacto = () => {
@@ -37,6 +38,7 @@ const Contacto = () => {
                 email: formData.email,
                 mensaje: formData.mensaje,
             });
+            await handleNewMessage (formData.nombre, formData.email);
             Swal.fire({
                 title: "Mensaje enviado!",
                 text: "Responderemos tu consulta lo antes posible. Muchas Gracias!",
