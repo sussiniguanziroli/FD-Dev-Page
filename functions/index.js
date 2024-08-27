@@ -29,7 +29,7 @@ exports.sendEmail = functions.firestore.document("mails/{messageId}")
     .onCreate(async (snap, context) => {
       const data = snap.data();
       const mailOptions = {
-        from: "facildigitalcontacto@gmail.com",
+        from: '"Fácil Digital"<facildigitalcontacto@gmail.com>',
         to: data.to,
         subject: data.message.subject,
         text: data.message.text, // El texto plano
