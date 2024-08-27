@@ -19,7 +19,7 @@ const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
     user: "facildigitalcontacto@gmail.com",
-    pass: "sylz dswd pgfh alnq",
+    pass: "sylz dswd pgfh alnq", // Asegúrate de que esta es la contraseña de la aplicación generada en tu cuenta de Google.
   },
   tls: {
     rejectUnauthorized: false,
@@ -32,7 +32,8 @@ exports.sendEmail = functions.firestore.document("mails/{messageId}")
         from: "facildigitalcontacto@gmail.com",
         to: data.to,
         subject: data.message.subject,
-        text: data.message.text,
+        text: data.message.text, // El texto plano
+        html: data.message.html, // El contenido en HTML
       };
 
       try {
