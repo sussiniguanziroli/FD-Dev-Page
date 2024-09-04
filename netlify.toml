@@ -1,0 +1,19 @@
+[[redirects]]
+  from = "/contacto"
+  to = "/index.html"
+  status = 200
+  force = true
+
+
+
+[[redirects]]
+  from = "/servicios"
+  to = "/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/nosotros"
+  to = "/index.html"
+  status = 200
+
